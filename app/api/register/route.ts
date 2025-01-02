@@ -1,39 +1,39 @@
-import { connect } from "@/dbConfig/dbConfig";
-import { NextRequest, NextResponse } from "next/server";
-import RegisteredUser from "@/models/registeredUserModel";
+// import { connect } from "@/dbConfig/dbConfig";
+// import { NextRequest, NextResponse } from "next/server";
+// import RegisteredUser from "@/models/registeredUserModel";
 
-connect();
+// connect();
 
-export async function POST(request: NextRequest) {
-  try {
-    const reqBody = await request.json();
+// export async function POST(request: NextRequest) {
+//   try {
+//     const reqBody = await request.json();
 
-    const { email, packageSelected } = reqBody;
+//     const { email, packageSelected } = reqBody;
 
-    const registeredUser = await RegisteredUser.findOne({ email });
+//     const registeredUser = await RegisteredUser.findOne({ email });
 
-    if (registeredUser) {
-      return NextResponse.json(
-        { error: "User already registered!" },
-        { status: 400 },
-      );
-    }
+//     if (registeredUser) {
+//       return NextResponse.json(
+//         { error: "User already registered!" },
+//         { status: 400 },
+//       );
+//     }
 
-    const newUser = new RegisteredUser({
-      email,
-      packageSelected,
-    });
+//     const newUser = new RegisteredUser({
+//       email,
+//       packageSelected,
+//     });
 
-    await newUser.save();
+//     await newUser.save();
 
-    return NextResponse.json(
-      {
-        message: "Registered successfully",
-        success: true,
-      },
-      { status: 201 },
-    );
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  }
-}
+//     return NextResponse.json(
+//       {
+//         message: "Registered successfully",
+//         success: true,
+//       },
+//       { status: 201 },
+//     );
+//   } catch (error: any) {
+//     return NextResponse.json({ error: error.message }, { status: 500 });
+//   }
+// }
