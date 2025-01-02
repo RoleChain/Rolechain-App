@@ -12,7 +12,7 @@ const FAQSection = () => {
             </span>
           </h2>
           <h4 className="text-xl text-gray-400 md:text-2xl">
-            Demystifying RoleChain's Decentralized AI Network
+            Demystifying RoleChain&apos;s Decentralized AI Network
           </h4>
         </div>
 
