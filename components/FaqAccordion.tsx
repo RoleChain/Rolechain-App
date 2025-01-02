@@ -8,31 +8,29 @@ import {
 
 const faqData = [
   {
-    question: "Do you guarantee my results?",
+    question: "What makes RoleChain different from other AI platforms?",
     answer:
-      "While I cannot guarantee specific results, as they greatly depend on individual effort and application, I do guarantee that I will provide you with all the necessary tools and knowledge to build confidence in your trading actions. If you apply the strategies and tools taught in the course diligently, you can expect to see results within the first week of participation.",
+      "RoleChain stands out as a fully decentralized AI network built specifically for Web3. Unlike centralized AI solutions, RoleChain leverages blockchain technology to ensure transparency, security, and community governance. Our AI agents are autonomous, adaptable, and operate across various Web3 sectors, from DeFi to gaming, providing a level of integration and flexibility unmatched by traditional AI platforms.",
   },
   {
-    question: "How long is each lesson?",
+    question: "How does RoleChain ensure the security and privacy of user data?",
     answer:
-      "Each lesson in the course is designed to be concise yet comprehensive, lasting between 12 to 20 minutes. The total duration of the course is approximately 3.2 hours, allowing for an in-depth exploration of the topics without overwhelming time commitment.",
+      "Security and privacy are at the core of RoleChain's design. We utilize advanced encryption techniques and decentralized storage to protect user data. Our blockchain-based verification system ensures that all AI operations are transparent and tamper-proof. Additionally, users have complete control over their data through our data sovereignty feature, allowing them to decide what information is shared and used by the AI agents.",
   },
   {
-    question: "Do I need prior investing experience?",
+    question: "Can I create my own AI agents on the RoleChain network?",
     answer:
-      "No prior investing experience is required to benefit from this course. It is structured to cater to both beginners who are just starting out and experienced investors looking to enhance their skills and knowledge.",
+      "RoleChain is designed to be an open ecosystem where users can create, train, and deploy their own AI agents. Our platform provides tools and frameworks that make it easy for developers of all skill levels to build and customize AI agents for specific use cases. Whether you're looking to create a trading bot, a content moderation AI, or a game asset manager, RoleChain gives you the power to bring your AI ideas to life in the Web3 space.",
   },
-  ,
   {
-    question: "Can I access the course material at any time?",
+    question: "How does RoleChain's token economy work?",
     answer:
-      "Yes, once enrolled, students have full 24/7 access to all course materials. This allows you to learn at your own pace and revisit any section as often as needed for deeper understanding or reinforcement.",
+      "The RoleChain ecosystem is powered by our native token, which serves multiple purposes. It's used for governance, allowing token holders to participate in decision-making processes. The token also facilitates transactions within the network, such as paying for AI agent services or rewarding node operators. Additionally, staking the token provides benefits like priority access to new features and a share in the network's revenue. This economic model ensures alignment between all participants and drives the continuous growth and improvement of the RoleChain network.",
   },
-  ,
   {
-    question: "Is there a community or forum for discussion?",
+    question: "What kind of performance can I expect from RoleChain's AI agents?",
     answer:
-      "Absolutely, students of this course gain access to an exclusive community. This platform is ideal for discussions, networking, sharing experiences, and seeking advice, making your learning journey collaborative and supported.",
+      "RoleChain's AI agents are designed for high performance in Web3 environments. Our decentralized infrastructure allows for parallel processing, enabling lightning-fast operations even during peak demand. The adaptive nature of our AI means that performance continuously improves over time as agents learn from interactions. In real-world tests, RoleChain agents have demonstrated the ability to process complex DeFi transactions 50% faster than traditional methods and have shown a 30% improvement in accuracy for market predictions compared to centralized alternatives.",
   },
 ];
 
@@ -41,18 +39,19 @@ export function FaqAccordion() {
     <Accordion type="single" collapsible className="w-full">
       {faqData.map((item, index) => (
         <AccordionItem
-          className="gray-gradient mb-[10px] gap-[30px] rounded-4xl data-[state=open]:mb-[30px]"
-          key={item?.question}
+          className="mb-4 overflow-hidden rounded-2xl border border-yellow-500/20 bg-black/50 transition-all hover:border-yellow-500/40"
+          key={item.question}
           value={`item-${index + 1}`}
         >
-          <AccordionTrigger className="yellow-gradient-text p-[30px] text-left text-2xl font-bold">
-            {item?.question}
+          <AccordionTrigger className="bg-gradient-to-r from-yellow-500 to-yellow-200 bg-clip-text p-6 text-left text-xl font-bold text-transparent">
+            {item.question}
           </AccordionTrigger>
-          <AccordionContent className="px-[30px] pb-[30px] text-lg">
-            {item?.answer}
+          <AccordionContent className="px-6 pb-6 text-gray-300">
+            {item.answer}
           </AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
   );
 }
+

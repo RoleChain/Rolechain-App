@@ -51,13 +51,12 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                  James is an{" "}
+                RoleChain is a groundbreaking{" "}
                   <span className="yellow-gradient-text">
-                    18-year industry veteran
+                  decentralized AI network                  
                   </span>{" "}
-                  with a diverse background in business and investing.
-                </h6>
-                <p className="text-sm md:text-base">Newsinsider.com</p>
+                    designed to unlock the trillion-dollar potential of Web3 industries and communities.                </h6>
+                {/* <p className="text-sm md:text-base">Newsinsider.com</p> */}
               </div>
             </div>
           </div>
@@ -66,13 +65,11 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                  A multi-millionaire with{" "}
+                 {" "}
                   <span className="yellow-gradient-text">
-                    unequaled knowledge of the cryptocurrency and stock markets
                   </span>{" "}
-                  who is semi-retired.
                 </h6>
-                <p className="text-sm md:text-base">Bitcoinist.com</p>
+                {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
               </div>
             </div>
           </div>
@@ -81,16 +78,16 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                  He is a{" "}
+                With unmatched{" "}
                   <span className="yellow-gradient-text">
-                    well-known YouTube analyst and lecturer
+                  AI adaptability
                   </span>{" "}
-                  who has a track record of{" "}
+                  RoleChain empowers creators, gamers, and investors to thrive in the rapidly evolving
+                 {" "}
                   <span className="yellow-gradient-text">
-                    correctly predicting daily Bitcoin prices.
-                  </span>
+                   , decentralized future                  </span>
                 </h6>
-                <p className="text-sm md:text-base">Investing.com</p>
+                {/* <p className="text-sm md:text-base">Investing.com</p> */}
               </div>
             </div>
           </div>
@@ -102,13 +99,12 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                  James is an{" "}
+                RoleChain is a groundbreaking{" "}
                   <span className="yellow-gradient-text">
-                    18-year industry veteran
+                  decentralized AI network                  
                   </span>{" "}
-                  with a diverse background in business and investing.
-                </h6>
-                <p className="text-sm md:text-base">Newsinsider.com</p>
+                    designed to unlock the trillion-dollar potential of Web3 industries and communities.                </h6>
+                {/* <p className="text-sm md:text-base">Newsinsider.com</p> */}
               </div>
             </div>
           </div>
@@ -117,13 +113,12 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                  A multi-millionaire with{" "}
+                A revolutionary platform  enabling {" "}
                   <span className="yellow-gradient-text">
-                    unequaled knowledge of the cryptocurrency and stock markets
+                  autonomous agents
                   </span>{" "}
-                  who is semi-retired.
-                </h6>
-                <p className="text-sm md:text-base">Bitcoinist.com</p>
+                   to redefine scalability, intelligence, and innovation in the Web3 ecosystem.                </h6>
+                {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
               </div>
             </div>
           </div>
@@ -132,16 +127,13 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                  He is a{" "}
+                With unmatched   {" "}
                   <span className="yellow-gradient-text">
-                    well-known YouTube analyst and lecturer
+                  AI adaptability,
                   </span>{" "}
-                  who has a track record of{" "}
-                  <span className="yellow-gradient-text">
-                    correctly predicting daily Bitcoin prices.
-                  </span>
-                </h6>
-                <p className="text-sm md:text-base">Investing.com</p>
+                  RoleChain empowers creators, gamers, and investors to thrive in the rapidly evolving decentralized future.
+                            </h6>
+                {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
               </div>
             </div>
           </div>
@@ -149,7 +141,7 @@ const ReviewSection = () => {
       )}
 
       <div className="-right-10 bottom-0 hidden w-full max-w-md xl:absolute xl:block">
-        <Image src={reviewImg} alt="James Crypto Guru" />
+        {/* <Image src={reviewImg} alt="James Crypto Guru" /> */}
       </div>
     </section>
   );

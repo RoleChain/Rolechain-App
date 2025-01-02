@@ -15,6 +15,10 @@ import CTA from "@/components/CTA";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer, { socialLinks } from "@/components/Footer";
+import DemoSection from "@/components/DemoSection";
+import FeaturesList from "@/components/Feature-list";
+import EarlyAccessSection from "@/components/EarlyAccessSection";
+import CoreCapabilities from "@/components/CoreCapabilities";
 
 export default function Home() {
   return (
@@ -26,12 +30,17 @@ export default function Home() {
         <VideoSection />
         <ReviewSection />
         <AdvantagesSection />
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
+        <EarlyAccessSection/>
         <CtaFileDownload />
         <CourseInfoSection />
-        <PricingSection />
-        <JamesInfoSection />
-        <TopicsSection />
+        {/* <PricingSection /> */}
+        <DemoSection/>
+
+        {/* <JamesInfoSection /> */}
+        <FeaturesList/>
+        {/* <TopicsSection /> */}
+        <CoreCapabilities/>
         {/* <CTA /> */}
         <FAQSection />
         <ContactSection />

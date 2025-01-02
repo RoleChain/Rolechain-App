@@ -15,45 +15,46 @@ const BeforeCard = () => {
         <div className="flex items-center gap-5">
           <Image src={advantageIcon} alt="Star icon" />
           <h2 className="text-[28px] font-bold text-white lg:text-5xl">
-            Before <span className="yellow-gradient-text">the course</span>
+            Before <span className="yellow-gradient-text">RoleChain</span>
           </h2>
         </div>
 
         <div className="space-y-[10px] ">
-          <h5 className="text-2xl font-bold">Limited Mindset</h5>
+          <h5 className="text-2xl font-bold">Fragmented Web3 Development</h5>
           <p className="text-base lg:text-lg">
-            Struggling with a habit of saving every dollar, leading to a
-            scarcity mindset.
+          Struggling with isolated solutions and lack of integration, leading to slow progress in decentralized innovation.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Unrealized Dreams</h5>
+          <h5 className="text-2xl font-bold">Unrealized Potential</h5>
           <p className="text-base lg:text-lg">
-            Constantly dreaming and wishing, yet trapped in a cycle of financial
-            stagnation.
+          Dreaming of blockchain adoption but hindered by inefficiencies in scalability and AI utilization.
           </p>
         </div>
         <div className="space-y-[10px]">
           <h5 className="text-2xl font-bold">Risk Aversion</h5>
           <p className="text-base lg:text-lg">
-            Hesitation to take financial risks, missing out on significant
-            opportunities.
+          Hesitant to embrace cutting-edge decentralized technology due to lack of trust and interoperability.
+
+
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Limited Belief</h5>
+          <h5 className="text-2xl font-bold">Limited Ecosystem
+          </h5>
           <p className="text-base lg:text-lg">
-            Doubting the existence of amazing opportunities, leading to a lack
-            of exploration and growth.
+          Operating within a narrow network, restricting creativity and community growth.
+
+
           </p>
         </div>
-        <div className="space-y-[10px]">
+        {/* <div className="space-y-[10px]">
           <h5 className="text-2xl font-bold">Isolation</h5>
           <p className="text-base lg:text-lg">
             Hesitating to engage with successful individuals, limiting personal
             and financial grow
           </p>
-        </div>
+        </div> */}
 
         {/* <SignUpDialog>
           <button className="grid w-full place-items-center whitespace-nowrap rounded-full bg-gradient-to-r from-lightYellow to-darkYellow text-sm font-medium text-primary ">
@@ -77,39 +78,37 @@ const AfterCard = () => {
         <div className="flex items-center gap-5">
           <Image src={advantageIcon} alt="Star icon" />
           <h2 className="text-[28px] font-bold text-white lg:text-5xl">
-            After <span className="yellow-gradient-text">the course</span>
+            After <span className="yellow-gradient-text">RoleChain</span>
           </h2>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Abundance Mindset</h5>
+          <h5 className="text-2xl font-bold">Seamless Decentralized AI</h5>
           <p className="text-base lg:text-lg">
-            Transition from saving out of fear to spending and investing with
-            confidence and purpose. Emphasis on shifting from a scarcity mindset
-            to one of abundance, enabling more significant financial decisions.
+          Transitioning to a unified platform that integrates AI and blockchain, driving exponential growth and innovation.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Realizing Dreams</h5>
+          <h5 className="text-2xl font-bold">Unlocking Web3 Potential</h5>
           <p className="text-base lg:text-lg">
-            Turning dreams into actionable goals, leading to tangible
-            achievements and success.
+          Enabling creators, developers, and investors to achieve success in the decentralized future.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Risk Aversion</h5>
+          <h5 className="text-2xl font-bold">Enhanced Security
+          </h5>
           <p className="text-base lg:text-lg">
-            Hesitation to take financial risks, missing out on significant
-            opportunities.
+          Fostering trust and reducing risks through a robust and adaptable AI-driven ecosystem.
+
+
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Networking with Success</h5>
+          <h5 className="text-2xl font-bold">Collaborative Growth</h5>
           <p className="text-base lg:text-lg">
-            Engaging with successful individuals, gaining insights, and
-            expanding your financial horizons.
+          Connecting a global community to build, innovate, and thrive together in Web3 industries.
           </p>
         </div>
-        <div className="space-y-[10px]">
+        {/* <div className="space-y-[10px]">
           <h5 className="text-2xl font-bold">Strategic Wealth Management</h5>
           <p className="text-base lg:text-lg">
             Participants will learn to transition from saving out of fear to
@@ -130,7 +129,7 @@ const AfterCard = () => {
             The course highlights the importance of engaging with successful
             individuals and expanding financial and personal growth networks.
           </p>
-        </div>
+        </div> */}
 
         {/* <SignUpDialog>
           <button className="yellow-gradient-bg grid w-full place-items-center whitespace-nowrap rounded-full  text-sm font-medium text-primary ">
@@ -140,7 +139,7 @@ const AfterCard = () => {
             </div>
           </button>
         </SignUpDialog> */}
-        <CTAButton>Buy Now on Gumroad</CTAButton>
+        <CTAButton>Create and own</CTAButton>
       </div>
     </div>
   );

@@ -19,27 +19,28 @@ const InfoSection = () => {
             </div>
           </div> */}
           <div className="space-y-2 px-6">
-            <h4 className="yellow-gradient-text text-3xl font-bold">
-              11 lessons
-            </h4>
+            <h4 className="yellow-gradient-text text-3xl font-bold ">purpose</h4>
             <p className=" text-lg font-medium leading-7">
-              Instant access to all lessons covering diverse financial topics
+              Revolutionizing growth, engagement, and monetization for gamers,
+              streamers, investors, and founders through decentralized AI and
+              Web3.
             </p>
           </div>
           <div className="space-y-2 px-6">
             <h4 className=" bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-3xl font-bold text-transparent">
-              PDF Summaries
+              Core Features
             </h4>
             <p className=" text-lg font-medium leading-7">
-              Convenient summaries in PDF format provided after each lesson
+              Scalable, autonomous, and reliable AI agents hosted on
+              decentralized nodes.
             </p>
           </div>
           <div className="space-y-2 pl-6">
             <h4 className=" bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-3xl font-bold text-transparent">
-              Unlimited Access
+              Unique Features{" "}
             </h4>
             <p className=" text-lg font-medium leading-7">
-              Lifetime access to all course materials, including video content
+            Self-sustaining AI agents that evolve and adapt to empower communities effectively.{" "}
             </p>
           </div>
         </div>

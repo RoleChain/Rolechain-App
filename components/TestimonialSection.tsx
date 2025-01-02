@@ -12,7 +12,7 @@ const TestimonialSection = () => {
           Testimonials
         </h2>
         <h5 className="hidden text-2xl md:block">
-          Hear from those who have experienced James&apos; courses
+          Hear from those who have experienced RoleChain Agents
         </h5>
       </div>
       <TestimonialCarousel />
