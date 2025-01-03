@@ -1,115 +1,86 @@
+"use client"
+
 import Image from "next/image";
-// import heroImg from "@/assets/images/hero.png";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
-import gumroadIcon from "@/assets/icons/gumroad-icon.svg";
-import HeroSideButton from "./HeroSideButton";
-import { SignUpDialog } from "./SignUpDialog";
-import HeroForm from "./HeroForm";
-import CTAButton from "./CTAButton";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <section className="relative" id="hero">
       <div className="-top-12 left-0 hidden w-full select-none place-items-center text-center uppercase md:absolute md:grid lg:-top-20">
-        <p className="font-outline bg-gradient-to-b from-[#806322] to-transparent to-75% bg-clip-text text-[150px] font-bold tracking-tight text-primary lg:text-[240px]">
-          AI-Agents
+        <p className="font-outline bg-gradient-to-b from-yellow-500 to-transparent to-75% bg-clip-text text-[150px] font-bold tracking-tight text-primary lg:text-[240px]">
+          RoleChain
         </p>
       </div>
       <div className="relative z-10 mx-auto flex w-11/12 max-w-screen-xl flex-col items-stretch justify-between gap-12 md:pt-28 lg:flex-row">
-        <HeroSideButton />
-
         <div className="w-full space-y-8 self-end lg:w-1/2 mt-20">
-          {/* <div className="gray-gradient hidden w-fit items-center gap-4 divide-x-2 divide-dotted divide-white/30 rounded-xl bg-gradient-to-r px-6 py-2 lg:flex">
-            <p className="bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-[40px] font-bold text-transparent">
-              Starts in{" "}
-            </p>
-            <p className="pl-6 text-2xl font-medium">January 2024</p>
-          </div> */}
-          <h1 className="text-center text-5xl font-bold text-[#F2F2F2] md:text-left md:text-8xl">
+          <h1 className="text-center text-5xl font-bold text-white md:text-left md:text-7xl">
             RoleChain<br />
-            <span className="bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-transparent text-xl ">
-            The Decentralized AI Backbone for Web3 Communities
+            <span className="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-transparent text-2xl md:text-3xl">
+              The Decentralized AI Backbone for Web3
             </span>
           </h1>
-          <h4 className="hidden text-balance text-left text-2xl md:block">
-           
-            RoleChain is the next-generation platform that combines autonomous AI agents with a decentralized infrastructure, empowering Web3 communities to scale, monetize, and thrive. From gamers and streamers to investors and founders, RoleChain is revolutionizing how ecosystems grow and engage.
+          <h4 className="hidden text-balance text-left text-xl text-gray-300 md:block">
+            RoleChain combines autonomous AI agents with a decentralized infrastructure, empowering Web3 communities to scale, monetize, and thrive. From DeFi and gaming to social platforms and DAOs, RoleChain is revolutionizing how ecosystems grow and engage.
           </h4>
 
           {/* visible on tablet and mobile */}
-          <h4 className="text-balance text-center text-xl md:hidden">
-            Discover the power of money with JamesCG to create a life of
-            abundance
+          <h4 className="text-balance text-center text-lg text-gray-300 md:hidden">
+            Empowering Web3 communities with decentralized AI agents. Scale your ecosystem, boost engagement, and unlock new revenue streams with RoleChain.
           </h4>
-          <div className="light-gray-gradient flex flex-col divide-y divide-dotted divide-white/30 rounded-4xl px-5 text-center md:hidden">
-            <div className="grid grid-cols-1 place-items-center divide-y divide-dotted divide-white/30">
-              {/* <div className="my-5 space-y-2 pr-5">
-                <h4 className=" yellow-gradient-text text-xl font-bold">
-                  *10% discount
-                </h4>
-                <p className=" text-sm font-bold">
-                  Exclusive 10% Discount for the First 50 Enrollees!
-                </p>
-              </div> */}
+          <div className="bg-gradient-to-r from-yellow-900/20 to-yellow-700/20 flex flex-col divide-y divide-dotted divide-yellow-500/30 rounded-3xl px-5 text-center md:hidden">
+            <div className="grid grid-cols-1 place-items-center divide-y divide-dotted divide-yellow-500/30">
               <div className="space-y-2 py-5">
-                <h4 className="yellow-gradient-text text-xl font-bold">
-                  11 lessons
+                <h4 className="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-xl font-bold text-transparent">
+                  Autonomous Agents
                 </h4>
-                <p className="text-sm">
-                  Instant access to all lessons covering diverse financial
-                  topics
+                <p className="text-sm text-gray-400">
+                  AI-powered agents that adapt and evolve to community needs
                 </p>
               </div>
-
-              <div className="space-y-2 py-5 ">
-                <h4 className=" yellow-gradient-text text-xl font-bold">
-                  PDF Summaries
+              <div className="space-y-2 py-5">
+                <h4 className="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-xl font-bold text-transparent">
+                  Decentralized Network
                 </h4>
-                <p className="text-sm">
-                  Convenient summaries in PDF format provided after each lesson
-                </p>
-              </div>
-              <div className="space-y-2 py-5 ">
-                <h4 className="yellow-gradient-text text-xl font-bold">
-                  Unlimited Access
-                </h4>
-                <p className="text-sm">
-                  Lifetime access to all course materials, including video
-                  content
+                <p className="text-sm text-gray-400">
+                  Secure, scalable infrastructure built on blockchain technology
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-3 md:hidden">
-            {/* <SignUpDialog>
-              <button className="yellow-gradient-bg grid place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary ">
-                <div className="flex items-center gap-2 px-4 py-3">
-                  <p>Sign Up & Save 10%*</p>
-                  <LuArrowUpRight size={18} />
-                </div>
-              </button>
-            </SignUpDialog> */}
-            <CTAButton>Buy Now on Gumroad</CTAButton>
-
-            <button className=" grid place-items-center rounded-full  text-sm font-medium text-primary ">
-              <Link
-                href={"#trailer"}
-                className="yellow-gradient-text flex items-center gap-2 "
-              >
-                <p>More Information</p>
-                <LuArrowUpRight className="text-secondary" />
-              </Link>
+          <div className="flex items-center justify-center gap-3 md:justify-start">
+            <button className="bg-yellow-500 text-black hover:bg-yellow-400 rounded-lg p-4 flex flex-row">
+              Get Started
+              <LuArrowUpRight className="ml-2 h-4 w-4 mt-1" />
+            </button>
+            <button className="bg-yellow-500 text-black hover:bg-yellow-400 rounded-lg p-4">
+              Watch Demo
             </button>
           </div>
-
-          {/* <HeroForm /> */}
-
-          {/* <CTAButton className="hidden md:block">Buy Now on Gumroad</CTAButton> */}
         </div>
-        <div className="max-w-md self-center md:max-w-xl md:self-start md:pb-16 ">
-          {/* <Image src={heroImg} alt="James Crypto Guru" /> */}
+        <div className="max-w-md self-center md:max-w-xl md:self-start md:pb-16">
+          <motion.div
+            animate={{
+              y: [0, 10, 0],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="relative aspect-square"
+          >
+            <Image
+              src="/placeholder.svg?height=400&width=400"
+              alt="RoleChain Network Visualization"
+              width={400}
+              height={400}
+              className="rounded-3xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-purple-500/20 rounded-3xl" />
+          </motion.div>
         </div>
       </div>
     </section>
@@ -117,3 +88,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

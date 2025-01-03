@@ -19,7 +19,7 @@ import DemoSection from "@/components/DemoSection";
 import FeaturesList from "@/components/Feature-list";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 import CoreCapabilities from "@/components/CoreCapabilities";
-
+import SocialSection from "@/components/SocialSection";
 export default function Home() {
   return (
     <>
@@ -27,7 +27,7 @@ export default function Home() {
       <main className="space-y-[90px] scroll-smooth bg-primary text-white md:space-y-32">
         <HeroSection />
         <InfoSection />
-        <VideoSection />
+        <SocialSection/>
         <ReviewSection />
         <AdvantagesSection />
         {/* <TestimonialSection /> */}

@@ -65,10 +65,11 @@ const ReviewSection = () => {
               <Image src={reviewIcon} alt="Review" />
               <div className="space-y-2">
                 <h6 className="text-lg font-bold md:text-[22px]">
-                 {" "}
+                A revolutionary platform  enabling {" "}
                   <span className="yellow-gradient-text">
+                  autonomous agents
                   </span>{" "}
-                </h6>
+                   to redefine scalability, intelligence, and innovation in the Web3 ecosystem.                </h6>
                 {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
               </div>
             </div>

@@ -11,8 +11,8 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "Laws Of Money - James Crypto Guru",
-  description: "Laws Of Money by James Crypto Guru.",
+  title: "rolechain",
+  description: "ai-agent",
 };
 
 export default function RootLayout({

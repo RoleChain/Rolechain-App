@@ -39,7 +39,8 @@ const ContactSection = () => {
                       href="mailto:contact@jamescryptoguru.com"
                       className="yellow-gradient-text text-sm font-semibold sm:text-base md:text-lg"
                     >
-                      contact@jamescryptoguru.com
+                                         contact@rolechain.io
+
                     </Link>
                   </div>
                 </div>

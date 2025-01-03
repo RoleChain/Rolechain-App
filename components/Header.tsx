@@ -1,38 +1,34 @@
 "use client";
 import Image from "next/image";
 import burgerIcon from "@/assets/icons/burger-menu.svg";
-import jcgLogo from "@/assets/icons/jcg-logo.svg";
+import logo from "@/assets/images/logo.jpeg";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
-import { SignUpDialog } from "./SignUpDialog";
 import CTAButton from "./CTAButton";
 
 const navLinks = [
   {
-    title: "About James",
+    title: "About ",
     link: "#about-james",
   },
   {
-    title: "Trailer",
-    link: "#trailer",
+    title: "Key Features",
+    link: "#key-features",
   },
   {
-    title: "Pricing",
-    link: "#pricing",
+    title: "Socials",
+    link: "#social",
   },
-  {
-    title: "Testimonials",
-    link: "#testimonials",
-  },
+  
   {
     title: "Who is it for",
     link: "#who-is-it-for",
   },
   {
-    title: "Topics",
-    link: "#topics",
+    title: "Capabilities",
+    link: "#capabilities",
   },
   {
     title: "Who is it for",
@@ -74,7 +70,7 @@ const Header = () => {
             <Image src={burgerIcon} alt="Open menu" />
           </div>
           <Link href={"/"}>
-            <Image src={jcgLogo} alt="James Crypto Guru" />
+            <Image src={logo} alt="James Crypto Guru" className="h-10 w-10" />
           </Link>
         </div>
         <div className="flex items-center md:gap-4">
@@ -87,7 +83,7 @@ const Header = () => {
             </button>
           </SignUpDialog> */}
 
-          <CTAButton>Buy Now on Gumroad</CTAButton>
+          {/* <CTAButton>Buy Now on Gumroad</CTAButton> */}
           {/* <a
             className="gumroad-button"
             href="https://jamescryptoguru.gumroad.com/l/CryptocurrencyMasterCourse"
@@ -97,12 +93,12 @@ const Header = () => {
           </a> */}
           <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-gunmetal text-sm  font-medium text-white md:grid">
             <Link
-              href="https://www.youtube.com/@JamesCryptoGuru"
+              href=""
               target="_blank"
               rel="noreferrer noopener"
               className="flex items-center gap-[10px] px-6 py-3"
             >
-              <p>James&apos;s Youtube</p>
+              <p>RoleChain</p>
               <LuArrowUpRight size={18} className="text-white" />
             </Link>
           </button>
@@ -130,7 +126,7 @@ const Header = () => {
               <ImCross size={18} />
             </div>
             <Link href={"/"} onClick={handleMenuClose}>
-              <Image src={jcgLogo} alt="JCG logo" />
+              <Image src={logo} alt="JCG logo" className="h-10 w-10" />
             </Link>
           </div>
 
@@ -165,16 +161,16 @@ const Header = () => {
                   </div>
                 </button>
               </SignUpDialog> */}
-              <CTAButton>Buy Now on Gumroad</CTAButton>
+              {/* <CTAButton>Buy Now on Gumroad</CTAButton> */}
             </div>
 
             <div className="pb-10">
-              <Link
+              {/* <Link
                 className="text-sm font-semibold"
                 href="mailto:contact@jamescryptoguru.com"
               >
                 contact@jamescryptoguru.com
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
