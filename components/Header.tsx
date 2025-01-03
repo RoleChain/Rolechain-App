@@ -6,7 +6,6 @@ import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
-import CTAButton from "./CTAButton";
 
 const navLinks = [
   {

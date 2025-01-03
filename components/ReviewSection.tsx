@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import reviewImg from "@/assets/images/james-speaking.png";
 import reviewIcon from "@/assets/icons/review.svg";
 import useMatchMedia from "@/hooks/useMediaQuery";
 import Carousel from "react-multi-carousel";

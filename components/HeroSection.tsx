@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { motion } from "framer-motion";
 

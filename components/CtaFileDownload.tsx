@@ -1,6 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import { LuFileText } from "react-icons/lu";
 import DownloadForm from "./DownloadForm";
 
 const CtaFileDownload = () => {

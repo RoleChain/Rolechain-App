@@ -1,11 +1,9 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { LuArrowUpRight, LuFileText } from "react-icons/lu";
+
 import advantageIcon from "@/assets/icons/advantage.svg";
 import useMatchMedia from "@/hooks/useMediaQuery";
 import { useState } from "react";
-import { SignUpDialog } from "./SignUpDialog";
 import CTAButton from "./CTAButton";
 
 const BeforeCard = () => {

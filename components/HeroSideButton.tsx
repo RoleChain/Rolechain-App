@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
-import jcgLogo from "@/assets/icons/jcg-logo.svg";
+import logo from "@/assets/images/logo.jpeg";
 import { useState } from "react";
-import { SignUpDialog } from "./SignUpDialog";
 import { AskQuestionDialog } from "./AskQuestionDialog";
 
 const HeroSideButton = () => {
@@ -14,7 +13,7 @@ const HeroSideButton = () => {
         onClick={() => setOpen(!open)}
         className="dark-gray-gradient fixed bottom-10 right-10 z-[999] hidden cursor-pointer place-items-center rounded-full border-[10px] border-neutral-800 p-5 shadow-hero-button transition-all hover:scale-110 xl:grid"
       >
-        <Image src={jcgLogo} alt="James Crypto Guru" />
+        <Image src={logo} alt="James Crypto Guru" />
       </div>
 
       {open ? (

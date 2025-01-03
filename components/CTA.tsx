@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { LuArrowUpRight } from "react-icons/lu";
+
 import jamesPhoto from "@/assets/images/james-photo-2.png";
 import CTAForm from "./CTAForm";
 
