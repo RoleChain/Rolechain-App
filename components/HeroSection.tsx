@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="relative" id="hero">
       <div className="-top-12 left-0 hidden w-full select-none place-items-center text-center uppercase md:absolute md:grid lg:-top-20">
         <p className="font-outline bg-gradient-to-b from-yellow-500 to-transparent to-75% bg-clip-text text-[150px] font-bold tracking-tight text-primary lg:text-[240px]">
-          RoleChain
+          AI Agents
         </p>
       </div>
       <div className="relative z-10 mx-auto flex w-11/12 max-w-screen-xl flex-col items-stretch justify-between gap-12 md:pt-28 lg:flex-row">
