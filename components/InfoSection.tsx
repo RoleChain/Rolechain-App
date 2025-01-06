@@ -34,13 +34,13 @@ const InfoSection = () => {
               <div className="flex flex-col gap-3">
                 <Image src={frame1} alt="Frame 1" className="h-10 w-10" />
                 <h4 className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-2xl font-bold text-transparent">
-                  Purpose
+                  Infrastructure
                 </h4>
               </div>
               <p className="text-sm leading-relaxed text-gray-300">
-                Revolutionizing growth, engagement, and monetization for gamers,
-                streamers, investors, and founders through decentralized AI and
-                Web3.
+                Create, customize, train, and deploy AI agents for any role in Web3. 
+                Leveraging decentralized infrastructure to scale Web3 innovation with 
+                a projected 43% CAGR in AI adoption.
               </p>
             </div>
           </motion.div>
@@ -58,12 +58,13 @@ const InfoSection = () => {
               <div className="flex flex-col gap-3">
                 <Image src={frame2} alt="Frame 2" className="h-10 w-10" />
                 <h4 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-2xl font-bold text-transparent">
-                  Core Features
+                  Decentralized Training
                 </h4>
               </div>
               <p className="text-sm leading-relaxed text-gray-300">
-                Scalable, autonomous, and reliable AI agents hosted on
-                decentralized nodes.
+                Train AI agents across a decentralized network of nodes, leveraging 
+                global data sources for improved accuracy and reduced bias. Access to 
+                over 10M+ datasets for versatile agent development.
               </p>
             </div>
           </motion.div>
@@ -81,12 +82,13 @@ const InfoSection = () => {
               <div className="flex flex-col gap-3">
                 <Image src={frame3} alt="Frame 3" className="h-10 w-10" />
                 <h4 className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-2xl font-bold text-transparent">
-                  Unique Features
+                  Flexible Integration
                 </h4>
               </div>
               <p className="text-sm leading-relaxed text-gray-300">
-                Self-sustaining AI agents that evolve and adapt to empower
-                communities effectively.
+                Choose between tokenized and non-tokenized AI agents with seamless 
+                Web3 platform integration. Node operators can earn up to 25% of network 
+                revenue through hosting and training.
               </p>
             </div>
           </motion.div>

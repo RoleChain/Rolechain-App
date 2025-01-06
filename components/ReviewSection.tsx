@@ -85,24 +85,6 @@ export default function ReviewSection() {
   if (isMobile) {
     return (
       <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 z-20">
-        <Carousel
-          swipeable={true}
-          draggable={true}
-          showDots={true}
-          responsive={responsive}
-          customDot={<CustomDot />}
-          infinite={true}
-          customTransition="transform 300ms ease-in-out"
-          transitionDuration={500}
-          containerClass="w-full"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="!bottom-[-20px]"
-          itemClass="px-2"
-        >
-          {reviews.map((review, index) => (
-            <ReviewCard key={index} {...review} />
-          ))}
-        </Carousel>
       </section>
     )
   }
@@ -110,7 +92,6 @@ export default function ReviewSection() {
   return (
     
     <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 z-20">
-      {renderReviews()}
     </section>
   )
 }

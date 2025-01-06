@@ -10,23 +10,23 @@ interface FeatureCard {
 
 const features: FeatureCard[] = [
   {
-    title: "Trader Signal AI",
-    description: "Market signals from realtime with low-time analysis and intelligent trading signals.",
-    icon: "🎯"
+    title: "Decentralized AI Training",
+    description: "Train AI agents across a global network of nodes, ensuring unbiased and efficient learning from diverse data sources.",
+    icon: "🧠"
   },
   {
-    title: "Streamer AI",
-    description: "Content creator engagement with low-time discoverability and automated content optimization",
-    icon: "🎥"
-  },
-  {
-    title: "Guild Manager AI",
-    description: "Optimize program execution and rewards with intelligent allocation systems",
+    title: "Node.js Developer Framework",
+    description: "Build and deploy sophisticated AI agents with our intuitive Node.js framework, accessing 10M+ training datasets.",
     icon: "⚡"
   },
   {
-    title: "Node Network",
-    description: "Decentralized infrastructure ensuring scalability and recursive reward distribution patterns",
+    title: "Flexible Token Integration",
+    description: "Choose between tokenized and non-tokenized AI agents, with built-in support for governance and monetization.",
+    icon: "🔗"
+  },
+  {
+    title: "Community AI Ecosystem",
+    description: "Create role-specific AI agents that learn and adapt in real-time, empowering Web3 communities.",
     icon: "🌐"
   }
 ]
@@ -47,12 +47,12 @@ export default function FeaturesSection() {
       <div className="relative z-10 container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Decentralized AI Agents for
+            Decentralized AI Infrastructure
             <br />
-            Web3 Communities
+            for Web3 Innovation
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Communities waste $13B annually on fragmented tools—RoleChain creates a unified and decentralized solution
+            Build, train, and deploy AI agents across a global network of nodes—creating a truly decentralized AI ecosystem
           </p>
         </div>
 

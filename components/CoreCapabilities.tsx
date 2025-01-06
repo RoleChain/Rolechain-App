@@ -6,8 +6,8 @@ import { LuArrowDown, LuBrain, LuNetwork, LuShieldCheck, LuBarChart, LuUsers, Lu
 const capabilities = [
   {
     icon: <LuBrain className="h-8 w-8" />,
-    name: "Autonomous Intelligence",
-    desc: "Self-evolving AI agents that adapt to market conditions and community needs in real-time.",
+    name: "Decentralized Node Training",
+    desc: "AI agents learn from distributed nodes globally, ensuring unbiased and robust model training.",
   },
   {
     icon: <LuNetwork className="h-8 w-8" />,
@@ -21,8 +21,8 @@ const capabilities = [
   },
   {
     icon: <LuBarChart className="h-8 w-8" />,
-    name: "Market Analytics",
-    desc: "Real-time DeFi insights powered by advanced pattern recognition algorithms.",
+    name: "Training Analytics",
+    desc: "Real-time insights into model performance and training progress across the node network.",
   },
   {
     icon: <LuUsers className="h-8 w-8" />,
@@ -31,18 +31,18 @@ const capabilities = [
   },
   {
     icon: <LuCode className="h-8 w-8" />,
-    name: "Smart Contracts",
-    desc: "Automated execution of complex operations with built-in safety mechanisms.",
+    name: "Node.js Training Framework",
+    desc: "Simplified development tools for creating and training AI agents across decentralized nodes.",
   },
   {
     icon: <LuDatabase className="h-8 w-8" />,
-    name: "Data Sovereignty",
-    desc: "Users maintain complete control over their data with encrypted storage.",
+    name: "Distributed Learning",
+    desc: "Federated learning approach ensuring data privacy while maximizing training efficiency.",
   },
   {
     icon: <LuZap className="h-8 w-8" />,
-    name: "Lightning Performance",
-    desc: "High-throughput processing optimized for Web3 scale operations.",
+    name: "Adaptive Performance",
+    desc: "Dynamic scaling of training resources across nodes for optimal AI agent development.",
   },
 ];
 

@@ -43,10 +43,10 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-xl font-bold md:text-2xl">Email</h4>
                     <Link
-                      href="mailto:contact@rolechain.io"
+                      href="mailto:hi@rolechain.io"
                       className=" text-sm font-semibold sm:text-base md:text-lg"
                     >
-                      contact@rolechain.io
+                      hi@rolechain.io
                     </Link>
                   </div>
                 </div>

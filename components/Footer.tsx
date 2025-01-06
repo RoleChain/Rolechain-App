@@ -1,16 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord, FaYoutube, FaXTwitter, FaInstagram, FaTelegram, FaGithub } from "react-icons/fa6";
+import { FaXTwitter, FaTelegram, FaGithub } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import React from "react";
-import logo from "@/assets/images/logo.webp";
+import logo from "@/assets/icons/logo.svg";
 export const socialLinks = [
-  { icon: FaDiscord, link: "https://discord.gg/rolechain" },
-  { icon: FaYoutube, link: "https://www.youtube.com/rolechain" },
   { icon: FaXTwitter, link: "https://twitter.com/rolechain" },
-  { icon: FaInstagram, link: "https://instagram.com/rolechain" },
-  { icon: FaTelegram, link: "https://t.me/rolechain" },
-  { icon: MdOutlineAlternateEmail, link: "mailto:contact@rolechain.io" },
+  { icon: FaTelegram, link: "https://t.me/rolechainai" },
+  { icon: MdOutlineAlternateEmail, link: "mailto:hi@rolechain.org" },
   { icon: FaGithub, link: "https://github.com/rolechain" },
 ];
 
@@ -23,11 +20,8 @@ const footerLinks = [
     // { title: "Roadmap", link: "#roadmap" },
   ],
   [
-    { title: "Documentation", link: "https://docs.rolechain.io" },
+    { title: "Documentation", link: "https://docs.rolechain.org" },
     { title: "FAQ", link: "#faq" },
-    { title: "Privacy Policy", link: "/privacy-policy" },
-    { title: "Terms of Service", link: "/terms-of-service" },
-    { title: "Contact Us", link: "/contact" },
   ],
 ];
 
@@ -78,9 +72,9 @@ const Footer = () => {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="bg-gray-800/40  text-white rounded-full p-4"
+                    className="bg-gray-800/40  text-white rounded-full p-3"
                   />
-                  <button type="submit" className=" text-white bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6]  rounded-full p-4 my-4 md:my-0">
+                  <button type="submit" className=" text-white bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6]  rounded-full p-3 my-4 md:my-0">
                     Subscribe
                   </button>
                 </form>
@@ -90,7 +84,7 @@ const Footer = () => {
                     href="mailto:contact@rolechain.io"
                     className="text-[#E21AEF] hover:underline"
                   >
-                    contact@rolechain.io
+                    hi@rolechain.io
                   </Link>
                 </p>
               </div>

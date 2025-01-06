@@ -16,33 +16,28 @@ const BeforeCard = () => {
           </h2>
         </div>
 
-        <div className="space-y-[10px] ">
-          <h5 className="text-2xl font-bold">Fragmented Web3 Development</h5>
+        <div className="space-y-[10px]">
+          <h5 className="text-2xl font-bold">Centralized AI Development</h5>
           <p className="text-base lg:text-lg">
-          Struggling with isolated solutions and lack of integration, leading to slow progress in decentralized innovation.
+            Limited by traditional AI training methods, lacking the benefits of decentralized learning and global data sources.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Unrealized Potential</h5>
+          <h5 className="text-2xl font-bold">Training Limitations</h5>
           <p className="text-base lg:text-lg">
-          Dreaming of blockchain adoption but hindered by inefficiencies in scalability and AI utilization.
+            Restricted access to diverse datasets and computational resources, resulting in less adaptable AI models.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Risk Aversion</h5>
+          <h5 className="text-2xl font-bold">Integration Challenges</h5>
           <p className="text-base lg:text-lg">
-          Hesitant to embrace cutting-edge decentralized technology due to lack of trust and interoperability.
-
-
+            Difficulty implementing AI solutions in Web3 environments due to lack of standardized frameworks and tools.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Limited Ecosystem
-          </h5>
+          <h5 className="text-2xl font-bold">Limited Scalability</h5>
           <p className="text-base lg:text-lg">
-          Operating within a narrow network, restricting creativity and community growth.
-
-
+            Constrained by centralized infrastructure, preventing efficient scaling of AI applications in decentralized ecosystems.
           </p>
         </div>
         {/* <div className="space-y-[10px]">
@@ -79,30 +74,27 @@ const AfterCard = () => {
           </h2>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Seamless Decentralized AI</h5>
+          <h5 className="text-2xl font-bold">Decentralized Node Training</h5>
           <p className="text-base lg:text-lg">
-          Transitioning to a unified platform that integrates AI and blockchain, driving exponential growth and innovation.
+            Access global computational resources and diverse datasets through our network of decentralized nodes.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Unlocking Web3 Potential</h5>
+          <h5 className="text-2xl font-bold">Advanced AI Capabilities</h5>
           <p className="text-base lg:text-lg">
-          Enabling creators, developers, and investors to achieve success in the decentralized future.
+            Create sophisticated AI agents that learn and adapt in real-time, powered by decentralized training methodology.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Enhanced Security
-          </h5>
+          <h5 className="text-2xl font-bold">Seamless Integration</h5>
           <p className="text-base lg:text-lg">
-          Fostering trust and reducing risks through a robust and adaptable AI-driven ecosystem.
-
-
+            Deploy AI agents effortlessly using our Node.js framework, with or without token integration.
           </p>
         </div>
         <div className="space-y-[10px]">
-          <h5 className="text-2xl font-bold">Collaborative Growth</h5>
+          <h5 className="text-2xl font-bold">Infinite Scalability</h5>
           <p className="text-base lg:text-lg">
-          Connecting a global community to build, innovate, and thrive together in Web3 industries.
+            Leverage our decentralized infrastructure to scale AI applications globally with enhanced performance and resilience.
           </p>
         </div>
         {/* <div className="space-y-[10px]">

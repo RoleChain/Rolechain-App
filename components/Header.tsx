@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import burgerIcon from "@/assets/icons/burger-menu.svg";
-import logo from "@/assets/images/logo.webp";
+import logo from "@/assets/icons/logo.svg";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useState } from "react";
@@ -59,11 +59,11 @@ const Header = () => {
     }
   }
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-[#190D0E] via-[#1C0D11] to-[#210D17]/0 ">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-[#190D0E]  to-[#3C0C3E]">
       <div className="mx-auto flex w-11/12  items-center justify-between gap-2 py-4">
         <div className="flex items-center gap-2 sm:gap-14 md:gap-5">
           <div
-            className=" cursor-pointer rounded-full bg-black "
+            className="cursor-pointer rounded-full"
             onClick={handleMenuOpen}
           >
             <Image src={burgerIcon} alt="Open menu" />
@@ -87,7 +87,7 @@ const Header = () => {
           </button>
           <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-[#1C1C1C] text-sm  font-medium text-white md:grid">
             <Link
-              href="https://your-server.com/path-to-your-pdf/Intro.pdf"
+              href="https://deck.rolechain.org"
               target="_blank"
               rel="noreferrer noopener"
               className="flex items-center gap-[10px] px-6 py-3"
@@ -114,7 +114,7 @@ const Header = () => {
         <div className="flex h-full flex-col gap-14 whitespace-nowrap px-16 py-6 pb-10 text-white ">
           <div className="flex items-center gap-14">
             <div
-              className="cursor-pointer rounded-full bg-black p-3"
+              className="cursor-pointer rounded-full p-3"
               onClick={handleMenuClose}
             >
               <ImCross size={18} />

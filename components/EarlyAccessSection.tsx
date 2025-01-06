@@ -22,10 +22,10 @@ export default function EarlyAccessSection() {
             Early Access
           </Badge>
           <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-            Be Among the First to Shape the Future
+            Build the Future of Decentralized AI Training
           </h2>
           <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            Join the pioneering community of Web3 innovators building the next generation of decentralized AI
+            Join our network of developers building and training AI agents across a decentralized infrastructure
           </p>
         </div>
 
@@ -62,9 +62,6 @@ export default function EarlyAccessSection() {
                   <p className="text-sm text-gray-400">CAGR in AI adoption</p>
                 </div>
               </div>
-              <button className="w-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-black rounded-full p-4 flex flex-row">
-                Join Waitlist <ArrowRight className="ml-2 h-4 w-4 mt-1" />
-              </button>
             </CardContent>
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-50" />
           </Card>
@@ -85,19 +82,19 @@ export default function EarlyAccessSection() {
 const benefits = [
   {
     icon: <Star className="h-5 w-5 text-[linear-gradient(to right, #FF6600, #F700F7, #0078F6)]" />,
-    text: "Priority access to beta features and testing",
+    text: "Access to decentralized node training infrastructure",
   },
   {
-    icon: <Zap className="h-5 w-5 " />,
-    text: "Exclusive early adopter token allocations",
+    icon: <Zap className="h-5 w-5" />,
+    text: "Node operator revenue sharing opportunities",
   },
   {
-    icon: <Trophy className="h-5 w-5 " />,
-    text: "Founding member status with special privileges",
+    icon: <Trophy className="h-5 w-5" />,
+    text: "Early access to our Node.js developer framework",
   },
   {
-    icon: <Users className="h-5 w-5 " />,
-    text: "Direct input on product development and features",
+    icon: <Users className="h-5 w-5" />,
+    text: "Shape the future of decentralized AI development",
   },
 ]
 

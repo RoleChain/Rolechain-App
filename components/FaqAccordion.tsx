@@ -10,27 +10,27 @@ const faqData = [
   {
     question: "What makes RoleChain different from other AI platforms?",
     answer:
-      "RoleChain stands out as a fully decentralized AI network built specifically for Web3. Unlike centralized AI solutions, RoleChain leverages blockchain technology to ensure transparency, security, and community governance. Our AI agents are autonomous, adaptable, and operate across various Web3 sectors, from DeFi to gaming, providing a level of integration and flexibility unmatched by traditional AI platforms.",
+      "RoleChain stands out as a fully decentralized AI network built specifically for Web3, featuring innovative decentralized node training. Unlike centralized AI solutions, RoleChain leverages blockchain technology and distributed computing to ensure transparent, secure, and community-driven AI development. Our AI agents learn from a global network of nodes, making them more adaptable and resistant to bias while operating across various Web3 sectors, from DeFi to gaming.",
   },
   {
     question: "How does RoleChain ensure the security and privacy of user data?",
     answer:
-      "Security and privacy are at the core of RoleChain's design. We utilize advanced encryption techniques and decentralized storage to protect user data. Our blockchain-based verification system ensures that all AI operations are transparent and tamper-proof. Additionally, users have complete control over their data through our data sovereignty feature, allowing them to decide what information is shared and used by the AI agents.",
+      "Security and privacy are fundamental to RoleChain's architecture. We employ advanced encryption and decentralized storage across our node network, ensuring data protection during both training and deployment. Our blockchain-based verification system guarantees transparent and tamper-proof AI operations, while our data sovereignty feature gives users complete control over their information sharing preferences.",
   },
   {
-    question: "Can I create my own AI agents on the RoleChain network?",
+    question: "How can I participate in RoleChain's decentralized node training?",
     answer:
-      "RoleChain is designed to be an open ecosystem where users can create, train, and deploy their own AI agents. Our platform provides tools and frameworks that make it easy for developers of all skill levels to build and customize AI agents for specific use cases. Whether you're looking to create a trading bot, a content moderation AI, or a game asset manager, RoleChain gives you the power to bring your AI ideas to life in the Web3 space.",
+      "Anyone can participate in RoleChain's decentralized training network by running a node. Node operators contribute computational resources to train AI models and earn rewards for their participation. This distributed approach ensures more robust and unbiased AI models while creating additional revenue streams for network participants. Whether you're a developer or infrastructure provider, you can join our network and help shape the future of decentralized AI.",
   },
   {
     question: "How does RoleChain's token economy work?",
     answer:
-      "The RoleChain ecosystem is powered by our native token, which serves multiple purposes. It's used for governance, allowing token holders to participate in decision-making processes. The token also facilitates transactions within the network, such as paying for AI agent services or rewarding node operators. Additionally, staking the token provides benefits like priority access to new features and a share in the network's revenue. This economic model ensures alignment between all participants and drives the continuous growth and improvement of the RoleChain network.",
+      "The RoleChain ecosystem is powered by our native token, which drives both governance and node training incentives. Token holders can participate in decision-making and earn rewards by staking or contributing to the decentralized training network. The token facilitates network transactions, including AI agent services and node operator compensation. This economic model ensures alignment between all participants while incentivizing high-quality training data and computational resources.",
   },
   {
     question: "What kind of performance can I expect from RoleChain's AI agents?",
     answer:
-      "RoleChain's AI agents are designed for high performance in Web3 environments. Our decentralized infrastructure allows for parallel processing, enabling lightning-fast operations even during peak demand. The adaptive nature of our AI means that performance continuously improves over time as agents learn from interactions. In real-world tests, RoleChain agents have demonstrated the ability to process complex DeFi transactions 50% faster than traditional methods and have shown a 30% improvement in accuracy for market predictions compared to centralized alternatives.",
+      "RoleChain's AI agents achieve superior performance through our decentralized training infrastructure. Our network of nodes enables parallel processing and continuous learning, resulting in faster operations even during peak demand. Real-world tests show RoleChain agents process complex DeFi transactions 50% faster than traditional methods, with a 30% improvement in accuracy due to our diverse, global training data. The decentralized nature of our training ensures models remain current and adapt to changing conditions automatically.",
   },
 ];
 
