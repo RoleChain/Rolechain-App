@@ -85,6 +85,17 @@ const Header = () => {
               <LuArrowUpRight size={18} className="text-white" />
             </Link>
           </button>
+          <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-[#1C1C1C] text-sm  font-medium text-white md:grid">
+            <Link
+              href="https://your-server.com/path-to-your-pdf/Intro.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="flex items-center gap-[10px] px-6 py-3"
+            >
+              <p>Pitch Deck</p>
+              <LuArrowUpRight size={18} className="text-white" />
+            </Link>
+          </button>
         </div>
       </div>
 

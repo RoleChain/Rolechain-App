@@ -74,13 +74,13 @@ const Footer = () => {
                 <h6 className="text-white bg-clip-text text-center text-lg font-bold text-transparent lg:text-left">
                   Stay Updated
                 </h6>
-                <form className="flex w-full max-w-sm items-center space-x-2">
+                <form className="flex flex-col md:flex-row w-full max-w-sm items-center space-x-2">
                   <input
                     type="email"
                     placeholder="Enter your email"
                     className="bg-gray-800/40  text-white rounded-full p-4"
                   />
-                  <button type="submit" className=" text-white bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6]  rounded-full p-4">
+                  <button type="submit" className=" text-white bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6]  rounded-full p-4 my-4 md:my-0">
                     Subscribe
                   </button>
                 </form>
