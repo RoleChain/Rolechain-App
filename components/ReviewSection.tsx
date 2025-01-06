@@ -80,7 +80,7 @@ export default function ReviewSection() {
         <ReviewCard key={index} {...review} />
       ))}
     </div>
-  ), [])
+  ), [reviews])
 
   if (isMobile) {
     return (
