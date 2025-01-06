@@ -41,7 +41,7 @@ module.exports = {
         royalBlue: "#002AFA",
         blueGreen: "#45ffa5",
         darkBlueGreen: "#1E7B65",
-        footer: "#525A63",
+        footer: "#111",
       },
       borderRadius: {
         "4xl": "30px",

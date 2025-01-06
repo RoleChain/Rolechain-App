@@ -67,7 +67,7 @@ const ContactForm = () => {
           <textarea
             id="message"
             placeholder="Your message..."
-            className="light-gray-gradient focus:ring-lightYellow focus-visible:ring-lightYellow min-h-24 rounded-[10px] border border-white/30 px-5 py-[10px] placeholder:text-white/40"
+            className="light-gray-gradient focus:ring-pink-300 focus-visible:ring-pink-300 min-h-24 rounded-[10px] border border-white/30 px-5 py-[10px] placeholder:text-white/40"
             {...register("message", {
               required: {
                 value: true,
@@ -88,7 +88,7 @@ const ContactForm = () => {
         <button
           disabled={loading}
           type="submit"
-          className="bg-white text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
+          className="bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
         >
           <div className="flex items-center gap-[10px] px-6 py-3">
             {loading ? (

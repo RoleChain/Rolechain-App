@@ -36,14 +36,14 @@ const ContactSection = () => {
                 contact information to get in touch:
               </h4>
 
-              <div className="rounded-4xl bg-gradient-to-r from-[#191A1B] to-[#131415] p-7 md:px-10 md:py-8">
+              <div className="rounded-4xl p-7 md:px-10 md:py-8 bg-gradient-to-b from-[#FFF]/10 to-[#FFF]/0 border border-white border-opacity-10">
                 <div className="flex items-center gap-4 sm:gap-[30px]">
                   <HiOutlineMailOpen className="h-10 w-10 flex-shrink-0 " />
 
                   <div>
                     <h4 className="text-xl font-bold md:text-2xl">Email</h4>
                     <Link
-                      href="mailto:contact@jamescryptoguru.com"
+                      href="mailto:contact@rolechain.io"
                       className=" text-sm font-semibold sm:text-base md:text-lg"
                     >
                       contact@rolechain.io
@@ -52,7 +52,7 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-4xl bg-gradient-to-r from-[#191A1B] to-[#131415] p-7 md:px-10 md:py-8">
+            <div className="rounded-4xl bg-gradient-to-b from-[#FFF]/10 to-[#FFF]/0 border border-white border-opacity-10 p-7 md:px-10 md:py-8">
               <ContactForm />
             </div>
           </div>

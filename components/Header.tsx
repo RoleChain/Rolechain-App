@@ -59,38 +59,22 @@ const Header = () => {
     }
   }
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#1B0D10]/50">
-      <div className="mx-auto flex w-11/12  items-center justify-between gap-2 py-6">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-[#190D0E] via-[#1C0D11] to-[#210D17]/0 ">
+      <div className="mx-auto flex w-11/12  items-center justify-between gap-2 py-4">
         <div className="flex items-center gap-2 sm:gap-14 md:gap-5">
           <div
-            className="h-10 w-10 cursor-pointer rounded-full bg-black p-[10px]"
+            className=" cursor-pointer rounded-full bg-black "
             onClick={handleMenuOpen}
           >
             <Image src={burgerIcon} alt="Open menu" />
           </div>
           <Link href={"/"}>
-            <Image src={logo} alt="James Crypto Guru" className="h-full w-full" />
+            <Image src={logo} alt="logo" className="" />
           </Link>
         </div>
         <div className="flex items-center md:gap-4">
-          {/* <SignUpDialog>
-            <button className="yellow-gradient-bg grid  place-items-center whitespace-nowrap rounded-full text-sm font-medium text-primary transition hover:opacity-80">
-              <div className="flex items-center gap-[10px] px-6 py-3">
-                <p>Sign Up</p>
-                <LuArrowUpRight size={18} className="text-primary" />
-              </div>
-            </button>
-          </SignUpDialog> */}
-
-          {/* <CTAButton>Buy Now on Gumroad</CTAButton> */}
-          {/* <a
-            className="gumroad-button"
-            href="https://jamescryptoguru.gumroad.com/l/CryptocurrencyMasterCourse"
-            data-gumroad-overlay-checkout="true"
-          >
-            Buy on
-          </a> */}
-          <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-gunmetal text-sm  font-medium text-white md:grid">
+         
+          <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-sm  font-medium text-white md:grid">
             <Link
               href=""
               target="_blank"
@@ -125,7 +109,7 @@ const Header = () => {
               <ImCross size={18} />
             </div>
             <Link href={"/"} onClick={handleMenuClose}>
-              <Image src={logo} alt="JCG logo" className="h-10 w-10" />
+              <Image src={logo} alt="JCG logo" className="" />
             </Link>
           </div>
 

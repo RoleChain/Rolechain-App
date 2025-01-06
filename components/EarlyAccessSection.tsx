@@ -10,8 +10,13 @@ import { Badge } from "./ui/badge"
 
 export default function EarlyAccessSection() {
   return (
-    <section className="w-full  py-12 md:py-24 lg:py-32 ">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-12 md:py-24 lg:py-32 relative">
+      {/* Background gradients */}
+      <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-b from-transparent via-[#2A0E3D] to-transparent" />
+      <div className=" hidden md:block absolute left-[40%] top-0 w-[20%] h-[90%] bg-gradient-to-l from-transparent via-[#1F133B] to-transparent" />
+      <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-b from-transparent via-[#1f123d] to-transparent" />
+
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <Badge variant="secondary" className="bg-[#2A76EE]/10 text-[#2A76EE]">
             Early Access
@@ -57,7 +62,7 @@ export default function EarlyAccessSection() {
                   <p className="text-sm text-gray-400">CAGR in AI adoption</p>
                 </div>
               </div>
-              <button className="w-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-black  rounded-full p-4 flex flex-row">
+              <button className="w-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-black rounded-full p-4 flex flex-row">
                 Join Waitlist <ArrowRight className="ml-2 h-4 w-4 mt-1" />
               </button>
             </CardContent>

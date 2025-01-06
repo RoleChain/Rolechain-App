@@ -12,13 +12,13 @@ const HeroSection = () => {
       className="relative  bg-gradient-to-b from-[#3C0C3E] via-[#0E0E21] to-transparent "
       id="hero"
     >
-      <div className="-top-12 left-0 hidden w-full select-none place-items-center text-center uppercase md:absolute md:grid lg:-top-20">
+      <div className="-top-12 left-0 hidden w-full select-none place-items-center text-center uppercase md:absolute md:grid lg:-top-[45px]">
         <p className="font-outline bg-gradient-to-b from-[#C193FD]  to-transparent to-60% bg-clip-text text-[150px] font-bold tracking-tight text-[#3C0C3E] opacity-50  lg:text-[200px]">
           AI Agents
         </p>
       </div>
-      <div className="relative z-10 mx-auto flex w-11/12 max-w-screen-xl flex-col items-stretch justify-between gap-12 md:pt-28 lg:flex-row">
-        <div className="mt-20 w-full space-y-8 self-end lg:w-1/2">
+      <div className="relative z-10 mx-auto flex w-11/12 max-w-screen-xl flex-col items-stretch justify-between gap-12 md:pt-28 lg:flex-row ">
+        <div className="mt-20 w-full space-y-8 self-end lg:w-1/2 ">
           <h1 className="text-center text-5xl font-bold text-white md:text-left md:text-7xl">
             <span className=" text-3xl md:text-5xl">
               The Decentralized AI <br /> Backbone for Web3
@@ -37,8 +37,8 @@ const HeroSection = () => {
             ecosystem, boost engagement, and unlock new revenue streams with
             RoleChain.
           </h4>
-          <div className="flex flex-col divide-y divide-dotted divide-yellow-500/30 rounded-3xl bg-gradient-to-r from-yellow-900/20 to-yellow-700/20 px-5 text-center md:hidden">
-            <div className="grid grid-cols-1 place-items-center divide-y divide-dotted divide-yellow-500/30">
+          <div className="flex flex-col divide-y divide-dotted  rounded-3xl bg-gradient-to-r from-[#3C1542] to-transparent px-5 text-center md:hidden">
+            <div className="grid grid-cols-1 place-items-center divide-y divide-dotted ">
               <div className="space-y-2 py-5">
                 <h4 className="bg-white bg-clip-text text-xl font-bold text-transparent">
                   Autonomous Agents
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 </p>
               </div>
               <div className="space-y-2 py-5">
-                <h4 className="bg-gradient-to-r from-yellow-400 to-yellow-200 bg-clip-text text-xl font-bold text-transparent">
+                <h4 className=" bg-clip-text text-xl font-bold text-white">
                   Decentralized Network
                 </h4>
                 <p className="text-sm text-gray-400">
@@ -69,7 +69,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative h-[500px] w-[500px] max-w-md self-center md:max-w-xl md:self-start md:pb-16">
+        <div className="relative h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] max-w-md self-center md:max-w-xl md:self-start md:pb-16 lg:mt-10">
           {/* Rotating background */}
           <motion.div
             animate={{
@@ -94,7 +94,7 @@ const HeroSection = () => {
             <Image
               src={coin}
               alt="RoleChain Network Visualization"
-              className="h-[300px] w-[300px] object-contain"
+              className=" h-[150px] w-[200px] lg:h-[300px] lg:w-[300px] object-contain "
             />
           </div>
         </div>

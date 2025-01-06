@@ -75,7 +75,7 @@ export default function ReviewSection() {
   }
 
   const renderReviews = useCallback(() => (
-    <div className="grid gap-6 md:grid-cols-3">
+    <div className="grid gap-6 md:grid-cols-3 relative z-20">
       {reviews.map((review, index) => (
         <ReviewCard key={index} {...review} />
       ))}
@@ -84,7 +84,7 @@ export default function ReviewSection() {
 
   if (isMobile) {
     return (
-      <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 ">
+      <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 z-20">
         <Carousel
           swipeable={true}
           draggable={true}
@@ -109,7 +109,7 @@ export default function ReviewSection() {
 
   return (
     
-    <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 ">
+    <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 z-20">
       {renderReviews()}
     </section>
   )
