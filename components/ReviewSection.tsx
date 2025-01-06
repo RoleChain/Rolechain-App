@@ -75,7 +75,7 @@ export default function ReviewSection() {
   }
 
   const renderReviews = useCallback(() => (
-    <div className="grid gap-6 md:grid-cols-3 relative z-20">
+    <div className="grid gap-6 md:grid-cols-3 relative z-20  ">
       {reviews.map((review, index) => (
         <ReviewCard key={index} {...review} />
       ))}
