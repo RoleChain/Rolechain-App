@@ -88,7 +88,7 @@ const ContactForm = () => {
         <button
           disabled={loading}
           type="submit"
-          className="yellow-gradient-bg text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
+          className="bg-white text-primary grid place-items-center whitespace-nowrap rounded-full text-sm font-medium disabled:opacity-70"
         >
           <div className="flex items-center gap-[10px] px-6 py-3">
             {loading ? (
@@ -107,7 +107,7 @@ const ContactForm = () => {
             <input
               type="checkbox"
               id="privacyPolicy"
-              className="border-darkYellow bg-gunmetal accent-darkYellow checked:bg-darkYellow checked:accent-darkYellow focus:text-darkYellow h-4 w-4 appearance-none rounded-full border"
+              className="border-pink-300 bg-gunmetal accent-pink-300 checked:bg-pink-300 checked:accent-pink-300 focus:text-pink-300 h-4 w-4 appearance-none rounded-full border"
               {...register("privacyPolicy", { required: true })}
             />
             <p className="text-sm">

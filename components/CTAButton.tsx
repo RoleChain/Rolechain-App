@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const CTAButton = ({
   className,
   children,
-  href = "https://jamescryptoguru.gumroad.com/l/airds",
+  href = "",
 }: {
   children: string | ReactNode;
   href?: string;

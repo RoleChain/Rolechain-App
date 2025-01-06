@@ -30,8 +30,8 @@ const DownloadForm = () => {
       const response = await axios.post("/api/subscribe", data);
 
       const link = document.createElement("a");
-      link.download = "JCG Free PDF";
-      link.href = "/jcg.pdf";
+      link.download = "RoleChain Guide";
+      link.href = "";
       link.click();
 
       toast.success("Your download has been started");
@@ -51,14 +51,14 @@ const DownloadForm = () => {
 
   return (
     <form
-      className="space-y-5 px-8 py-8 lg:pl-[50px] lg:pr-[70px] "
+      className="space-y-5 px-8 py-8 lg:pl-[50px] lg:pr-[70px]  "
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="space-y-1">
         <input
           type="string"
           placeholder="Enter your email"
-          className="border-secondary text-secondary placeholder:text-secondary w-full rounded-lg border bg-white/80 px-5 py-[10px]"
+          className="text-white/20 w-full rounded-lg border bg-white/80 px-5 py-[10px]"
           {...register("email", {
             required: true,
             pattern:
@@ -71,7 +71,7 @@ const DownloadForm = () => {
       </div>
 
       <div className="flex flex-wrap items-center gap-[14px]">
-        <button
+        {/* <button
           disabled={loading}
           className="bg-primary grid  min-w-36 place-items-center whitespace-nowrap rounded-full text-sm font-medium text-white disabled:opacity-70"
         >
@@ -85,7 +85,7 @@ const DownloadForm = () => {
               </>
             )}
           </div>
-        </button>
+        </button> */}
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <input
@@ -94,7 +94,7 @@ const DownloadForm = () => {
               className="h-4 w-4 appearance-none rounded-full bg-white/60 "
               {...register("privacyPolicy", { required: true })}
             />
-            <p className="text-primary text-xs">
+            <p className="text-white text-xs">
               I agree with <span className="underline">Privacy Policy</span>
             </p>
           </div>

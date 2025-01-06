@@ -1,24 +1,70 @@
-"use client";
-import Image from "next/image";
-import reviewIcon from "@/assets/icons/review.svg";
-import useMatchMedia from "@/hooks/useMediaQuery";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+'use client'
 
-export const CustomDot = ({ onClick, active, index, carouselState }: any) => {
-  const { currentSlide } = carouselState;
+import { useCallback } from "react"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
+import useMatchMedia from "@/hooks/useMediaQuery"
+import reviewIcon from "@/assets/images/Vector (6).webp"
+import Image from "next/image"
+
+interface CustomDotProps {
+  onClick?: () => void
+  active?: boolean
+  index?: number
+  carouselState?: any
+}
+
+const CustomDot = ({ onClick, active }: CustomDotProps) => {
   return (
     <li
       className={`mr-1 h-[2px] cursor-pointer transition-all ${
-        active ? "bg-secondary w-6" : "w-4 bg-white"
+        active ? "bg-[#FF3B9A] w-6" : "w-4 bg-white/50"
       }`}
-      onClick={() => onClick()}
-    ></li>
-  );
-};
+      onClick={onClick}
+      role="button"
+      aria-label={active ? "Current slide" : "Go to slide"}
+    />
+  )
+}
 
-const ReviewSection = () => {
-  const isMobile = useMatchMedia(640);
+const ReviewCard = ({ content, highlight, highlightPrefix = "" }: { content: string, highlight: string, highlightPrefix?: string }) => (
+  <div className="relative w-full rounded-[20px] bg-gradient-to-b to-[#0B0C12] from-[#171521] p-8  transition-colors border-[2px] border-[#161420] border-solid">
+    {/* Quotation marks */}
+    <Image 
+      src={reviewIcon} 
+      alt="Review" 
+      className="absolute top-6 right-8 opacity-80 " 
+      width={40}
+      height={40}
+    />
+    <div className="text-lg font-bold leading-[1.4] text-white mt-4">
+      {content.split(highlight).map((part, index, array) => (
+        index === array.length - 1 ? 
+        part : 
+        <>{part}{highlightPrefix}<span key={index} className="text-[#FF3B9A]">{highlight}</span></>
+      ))}
+    </div>
+  </div>
+)
+
+export default function ReviewSection() {
+  const isMobile = useMatchMedia(640)
+
+  const reviews = [
+    {
+      content: "RoleChain is a groundbreaking decentralized AI network designed to unlock the trillion-dollar potential of Web3 industries and communities.",
+      highlight: "decentralized AI network"
+    },
+    {
+      content: "With unmatched AI adaptability, RoleChain empowers creators, gamers, and investors to thrive in the rapidly evolving decentralized future.",
+      highlight: "adaptability",
+      highlightPrefix: "AI "
+    },
+    {
+      content: "A revolutionary platform enabling autonomous agents to redefine scalability, intelligence, and innovation in the Web3 ecosystem.",
+      highlight: "autonomous agents"
+    }
+  ]
 
   const responsive = {
     mobile: {
@@ -26,11 +72,19 @@ const ReviewSection = () => {
       items: 1,
       slidesToSlide: 1,
     },
-  };
+  }
 
-  return (
-    <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl ">
-      {isMobile ? (
+  const renderReviews = useCallback(() => (
+    <div className="grid gap-6 md:grid-cols-3">
+      {reviews.map((review, index) => (
+        <ReviewCard key={index} {...review} />
+      ))}
+    </div>
+  ), [])
+
+  if (isMobile) {
+    return (
+      <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 ">
         <Carousel
           swipeable={true}
           draggable={true}
@@ -40,111 +94,24 @@ const ReviewSection = () => {
           infinite={true}
           customTransition="transform 300ms ease-in-out"
           transitionDuration={500}
-          containerClass="w-full h-[320px]"
+          containerClass="w-full"
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass=""
+          dotListClass="!bottom-[-20px]"
           itemClass="px-2"
         >
-          <div className="gray-gradient drag-none mx-auto w-full max-w-3xl cursor-grab  select-none rounded-3xl xl:mx-0">
-            <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
-              <Image src={reviewIcon} alt="Review" />
-              <div className="space-y-2">
-                <h6 className="text-lg font-bold md:text-[22px]">
-                RoleChain is a groundbreaking{" "}
-                  <span className="yellow-gradient-text">
-                  decentralized AI network                  
-                  </span>{" "}
-                    designed to unlock the trillion-dollar potential of Web3 industries and communities.                </h6>
-                {/* <p className="text-sm md:text-base">Newsinsider.com</p> */}
-              </div>
-            </div>
-          </div>
-          <div className="gray-gradient mx-auto w-full  max-w-3xl rounded-3xl xl:mx-0 2xl:mx-auto">
-            <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
-              <Image src={reviewIcon} alt="Review" />
-              <div className="space-y-2">
-                <h6 className="text-lg font-bold md:text-[22px]">
-                A revolutionary platform  enabling {" "}
-                  <span className="yellow-gradient-text">
-                  autonomous agents
-                  </span>{" "}
-                   to redefine scalability, intelligence, and innovation in the Web3 ecosystem.                </h6>
-                {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
-              </div>
-            </div>
-          </div>
-          <div className="gray-gradient mx-auto w-full max-w-3xl rounded-3xl xl:mx-0 2xl:max-w-4xl">
-            <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
-              <Image src={reviewIcon} alt="Review" />
-              <div className="space-y-2">
-                <h6 className="text-lg font-bold md:text-[22px]">
-                With unmatched{" "}
-                  <span className="yellow-gradient-text">
-                  AI adaptability
-                  </span>{" "}
-                  RoleChain empowers creators, gamers, and investors to thrive in the rapidly evolving
-                 {" "}
-                  <span className="yellow-gradient-text">
-                   , decentralized future                  </span>
-                </h6>
-                {/* <p className="text-sm md:text-base">Investing.com</p> */}
-              </div>
-            </div>
-          </div>
+          {reviews.map((review, index) => (
+            <ReviewCard key={index} {...review} />
+          ))}
         </Carousel>
-      ) : (
-        <div className="space-y-7">
-          <div className="gray-gradient mx-auto w-full max-w-3xl rounded-3xl xl:mx-0">
-            <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
-              <Image src={reviewIcon} alt="Review" />
-              <div className="space-y-2">
-                <h6 className="text-lg font-bold md:text-[22px]">
-                RoleChain is a groundbreaking{" "}
-                  <span className="yellow-gradient-text">
-                  decentralized AI network                  
-                  </span>{" "}
-                    designed to unlock the trillion-dollar potential of Web3 industries and communities.                </h6>
-                {/* <p className="text-sm md:text-base">Newsinsider.com</p> */}
-              </div>
-            </div>
-          </div>
-          <div className="gray-gradient mx-auto w-full  max-w-3xl rounded-3xl xl:mx-0 2xl:mx-auto">
-            <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
-              <Image src={reviewIcon} alt="Review" />
-              <div className="space-y-2">
-                <h6 className="text-lg font-bold md:text-[22px]">
-                A revolutionary platform  enabling {" "}
-                  <span className="yellow-gradient-text">
-                  autonomous agents
-                  </span>{" "}
-                   to redefine scalability, intelligence, and innovation in the Web3 ecosystem.                </h6>
-                {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
-              </div>
-            </div>
-          </div>
-          <div className="gray-gradient mx-auto w-full max-w-3xl rounded-3xl xl:mx-0 2xl:max-w-4xl">
-            <div className="flex items-start gap-[22px] px-[30px] py-10 md:gap-7 md:px-9 md:py-12">
-              <Image src={reviewIcon} alt="Review" />
-              <div className="space-y-2">
-                <h6 className="text-lg font-bold md:text-[22px]">
-                With unmatched   {" "}
-                  <span className="yellow-gradient-text">
-                  AI adaptability,
-                  </span>{" "}
-                  RoleChain empowers creators, gamers, and investors to thrive in the rapidly evolving decentralized future.
-                            </h6>
-                {/* <p className="text-sm md:text-base">Bitcoinist.com</p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      </section>
+    )
+  }
 
-      <div className="-right-10 bottom-0 hidden w-full max-w-md xl:absolute xl:block">
-        {/* <Image src={reviewImg} alt="James Crypto Guru" /> */}
-      </div>
+  return (
+    
+    <section id="reviews" className="relative mx-auto w-11/12 max-w-screen-xl py-12 ">
+      {renderReviews()}
     </section>
-  );
-};
+  )
+}
 
-export default ReviewSection;

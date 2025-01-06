@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaDiscord, FaYoutube, FaXTwitter, FaInstagram, FaTelegram, FaGithub } from "react-icons/fa6";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import React from "react";
-import logo from "@/assets/images/logo.jpeg";
+import logo from "@/assets/images/logo.webp";
 export const socialLinks = [
   { icon: FaDiscord, link: "https://discord.gg/rolechain" },
   { icon: FaYoutube, link: "https://www.youtube.com/rolechain" },
@@ -37,7 +37,7 @@ const Footer = () => {
       <div className="pb-14 pt-28">
         <div className="flex flex-col items-center justify-center gap-10 pb-10 lg:flex-row lg:items-stretch lg:justify-between lg:pb-32">
           <div className="flex max-w-sm flex-col items-center justify-between gap-4 pb-8 lg:max-w-64 lg:items-start lg:justify-normal lg:ml-10">
-            <Image src={logo} alt="RoleChain logo" width={100} height={50} />
+            <Image src={logo} alt="RoleChain logo" className="h-[60px] w-full" />
             <p className="text-balance text-center text-lg lg:text-left text-gray-300">
               Empowering Web3 Communities with Decentralized AI
             </p>

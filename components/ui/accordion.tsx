@@ -28,7 +28,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <LuPlus className="text-secondary h-8 w-8 shrink-0 rounded-full p-1 transition-transform duration-200" />
+      <LuPlus className="text-pink-500 h-8 w-8 shrink-0 rounded-full p-1 transition-transform duration-200" />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));

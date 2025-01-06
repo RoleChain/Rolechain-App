@@ -1,32 +1,67 @@
+"use client"
 
-import { Bot, Cpu, Network, Shield } from 'lucide-react'
-import { Card, CardContent } from './ui/card'
+import { Card } from "@/components/ui/card"
 
-export default function FeaturesList() {
+interface FeatureCard {
+  title: string
+  description: string
+  icon: string
+}
+
+const features: FeatureCard[] = [
+  {
+    title: "Trader Signal AI",
+    description: "Market signals from realtime with low-time analysis and intelligent trading signals.",
+    icon: "🎯"
+  },
+  {
+    title: "Streamer AI",
+    description: "Content creator engagement with low-time discoverability and automated content optimization",
+    icon: "🎥"
+  },
+  {
+    title: "Guild Manager AI",
+    description: "Optimize program execution and rewards with intelligent allocation systems",
+    icon: "⚡"
+  },
+  {
+    title: "Node Network",
+    description: "Decentralized infrastructure ensuring scalability and recursive reward distribution patterns",
+    icon: "🌐"
+  }
+]
+
+export default function FeaturesSection() {
   return (
-    <section className="w-full  py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
-              Decentralized AI Agents for Web3 Communities
-            </h2>
-            <p className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Communities waste $1.2B annually on fragmented tools—RoleChain creates a unified and decentralized solution.
-            </p>
-          </div>
+    <section className="relative w-full min-h-screen py-20">
+      {/* Left gradient */}
+      <div className="absolute left-0 top-0 w-1/2 h-full bg-gradient-to-b from-transparent via-[#2A0E3D] to-transparent" />
+
+      {/* Middle gradient to merge left and right */}
+      <div className="absolute left-[40%] top-0 w-[20%] h-[90%] bg-gradient-to-l from-transparent via-[#1F133B] to-transparent" />
+      {/* <div className="absolute left-[45%] top-0 w-[10%] h-full bg-gradient-to-r from-transparent via-[#180F2f] to-transparent" /> */}
+
+      {/* Right gradient */}
+      <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-b from-transparent via-[#1f123d] to-transparent" />
+      
+      <div className="relative z-10 container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Decentralized AI Agents for
+            <br />
+            Web3 Communities
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Communities waste $13B annually on fragmented tools—RoleChain creates a unified and decentralized solution
+          </p>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          {features.map((feature, index) => (
-            <Card key={index} className="relative overflow-hidden bg-black/50 p-2">
-              <CardContent className="flex flex-col items-start space-y-4 p-6">
-                <div className="inline-flex rounded-lg bg-yellow-500/10 p-3">
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl font-bold text-white">{feature.title}</h3>
-                <p className="text-gray-400">{feature.description}</p>
-              </CardContent>
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-purple-500/10 opacity-50" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {features.map((feature) => (
+            <Card key={feature.title} className="p-6 bg-black/20 border-gray-800 backdrop-blur-sm">
+              <div className="text-2xl mb-4">{feature.icon}</div>
+              <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+              <p className="text-gray-400 text-sm">{feature.description}</p>
             </Card>
           ))}
         </div>
@@ -34,27 +69,4 @@ export default function FeaturesList() {
     </section>
   )
 }
-
-const features = [
-  {
-    icon: <Bot className="h-6 w-6 text-yellow-500" />,
-    title: "Trader Signal AI",
-    description: "Monitor DeFi and token markets with real-time analytics and intelligent trading signals.",
-  },
-  {
-    icon: <Network className="h-6 w-6 text-yellow-500" />,
-    title: "Streamer AI",
-    description: "Enhance Twitch engagement with real-time interactivity and automated content optimization.",
-  },
-  {
-    icon: <Shield className="h-6 w-6 text-yellow-500" />,
-    title: "Guild Manager AI",
-    description: "Optimize in-game economies and rewards with intelligent distribution systems.",
-  },
-  {
-    icon: <Cpu className="h-6 w-6 text-yellow-500" />,
-    title: "Node Network",
-    description: "Decentralized infrastructure ensuring scalability and resilience across the platform.",
-  },
-]
 

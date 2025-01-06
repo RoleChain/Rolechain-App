@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import burgerIcon from "@/assets/icons/burger-menu.svg";
-import logo from "@/assets/images/logo.jpeg";
+import logo from "@/assets/images/logo.webp";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { useState } from "react";
@@ -59,7 +59,7 @@ const Header = () => {
     }
   }
   return (
-    <header className="sticky top-0 z-50 w-full bg-primary">
+    <header className="sticky top-0 z-50 w-full bg-[#1B0D10]/50">
       <div className="mx-auto flex w-11/12  items-center justify-between gap-2 py-6">
         <div className="flex items-center gap-2 sm:gap-14 md:gap-5">
           <div
@@ -69,7 +69,7 @@ const Header = () => {
             <Image src={burgerIcon} alt="Open menu" />
           </div>
           <Link href={"/"}>
-            <Image src={logo} alt="James Crypto Guru" className="h-10 w-10" />
+            <Image src={logo} alt="James Crypto Guru" className="h-full w-full" />
           </Link>
         </div>
         <div className="flex items-center md:gap-4">

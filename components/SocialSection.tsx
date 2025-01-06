@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import logo from "@/assets/images/logo.jpeg";
+import logo from "@/assets/images/logo.webp";
 const socialLinks = [
   { name: "Twitter", url: "https://twitter.com/rolechain", icon: logo },
   { name: "Discord", url: "https://discord.gg/rolechain", icon: logo },

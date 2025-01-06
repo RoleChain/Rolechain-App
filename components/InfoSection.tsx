@@ -1,48 +1,95 @@
+"use client";
 import Image from "next/image";
-import sphereOld from "@/assets/images/sphere.png";
+import sphereOld from "@/assets/images/image (17).webp";
+import { motion } from "framer-motion";
+import frame1 from "@/assets/info-icon/Frame1.webp";
+import frame2 from "@/assets/info-icon/Frame2.webp";
+import frame3 from "@/assets/info-icon/Frame3.webp";
 
 const InfoSection = () => {
   return (
-    <section className="relative " id="key-features">
+    <section className="relative mt-12 mb-12" id="key-features">
       <div className="left-0 top-0 hidden h-[400px] w-[400px] md:absolute md:block">
-        <Image src={sphereOld} alt="Sphere background" />
+        <Image src={sphereOld} alt="Sphere background" className="opacity-70 -ml-[100px]" />
       </div>
-      <div className="relative mx-auto hidden w-11/12 max-w-screen-xl flex-col gap-16 md:flex">
-        <h2 className="text-center text-5xl font-bold">Key information</h2>
-        <div className="grid grid-cols-2 place-items-center gap-4 divide-white/30  py-7 text-center lg:grid-cols-3 lg:gap-0 lg:divide-x-2">
-          {/* <div className="pr-6">
-            <div className="space-y-2 rounded-2xl bg-gradient-to-r from-lightYellow to-darkYellow p-4">
-              <h4 className="text-3xl font-bold text-primary">*10% discount</h4>
-              <p className="text-lg font-semibold text-primary/50">
-                Exclusive 10% Discount for the First 50 Enrollees!
+      
+      <div className="relative mx-auto w-11/12 max-w-screen-xl top-[100px]">
+        {/* Heading */}
+        <h2 className=" text-center text-5xl font-bold text-white ">
+          Key information
+        </h2>
+
+        {/* Cards Grid */}
+        <div className="grid gap-8 md:grid-cols-3 mt-[100px]">
+          {/* Purpose Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="shadow-r group relative overflow-hidden bg-gradient-to-r from-[#8D420D] to-[#171721] p-6 shadow-[rgba(141,66,13,0.5)_0px_0px_15px]"
+          >
+            <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#F67114] to-transparent " />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#8D420D] to-[#171721] opacity-0 transition-opacity duration-300 " />
+            <div className="relative space-y-4">
+              <div className="flex flex-col gap-3">
+                <Image src={frame1} alt="Frame 1" className="h-10 w-10" />
+                <h4 className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-2xl font-bold text-transparent">
+                  Purpose
+                </h4>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-300">
+                Revolutionizing growth, engagement, and monetization for gamers,
+                streamers, investors, and founders through decentralized AI and
+                Web3.
               </p>
             </div>
-          </div> */}
-          <div className="space-y-2 px-6">
-            <h4 className="yellow-gradient-text text-3xl font-bold ">purpose</h4>
-            <p className=" text-lg font-medium leading-7">
-              Revolutionizing growth, engagement, and monetization for gamers,
-              streamers, investors, and founders through decentralized AI and
-              Web3.
-            </p>
-          </div>
-          <div className="space-y-2 px-6">
-            <h4 className=" bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-3xl font-bold text-transparent">
-              Core Features
-            </h4>
-            <p className=" text-lg font-medium leading-7">
-              Scalable, autonomous, and reliable AI agents hosted on
-              decentralized nodes.
-            </p>
-          </div>
-          <div className="space-y-2 pl-6">
-            <h4 className=" bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-3xl font-bold text-transparent">
-              Unique Features{" "}
-            </h4>
-            <p className=" text-lg font-medium leading-7">
-            Self-sustaining AI agents that evolve and adapt to empower communities effectively.{" "}
-            </p>
-          </div>
+          </motion.div>
+
+          {/* Core Features Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="shadow-left group relative overflow-hidden bg-gradient-to-r from-[#85118C] to-[#171721] p-6 shadow-[0_0_15px_rgba(133,17,140,0.5)] backdrop-blur-sm"
+          >
+            <div className="] absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#E21AEF] to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#85118C] to-[#171721] opacity-0 transition-opacity duration-300 " />
+            <div className="relative space-y-4">
+              <div className="flex flex-col gap-3">
+                <Image src={frame2} alt="Frame 2" className="h-10 w-10" />
+                <h4 className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-2xl font-bold text-transparent">
+                  Core Features
+                </h4>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-300">
+                Scalable, autonomous, and reliable AI agents hosted on
+                decentralized nodes.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Unique Features Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="group relative overflow-hidden bg-gradient-to-r from-[#0F4CAC] to-[#171721] p-6 shadow-[0_0_15px_rgba(15,76,172,0.5)] backdrop-blur-sm"
+          >
+            <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-t from-[#2A76EE] to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0F4CAC] to-[#171721] opacity-0 transition-opacity duration-300 " />
+            <div className="relative space-y-4">
+              <div className="flex flex-col gap-3">
+                <Image src={frame3} alt="Frame 3" className="h-10 w-10" />
+                <h4 className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-2xl font-bold text-transparent">
+                  Unique Features
+                </h4>
+              </div>
+              <p className="text-sm leading-relaxed text-gray-300">
+                Self-sustaining AI agents that evolve and adapt to empower
+                communities effectively.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

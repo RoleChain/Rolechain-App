@@ -39,11 +39,11 @@ export function FaqAccordion() {
     <Accordion type="single" collapsible className="w-full">
       {faqData.map((item, index) => (
         <AccordionItem
-          className="mb-4 overflow-hidden rounded-2xl border border-yellow-500/20 bg-black/50 transition-all hover:border-yellow-500/40"
+          className="mb-4 overflow-hidden rounded-2xl border border-gray-500  bg-black/50 transition-all "
           key={item.question}
           value={`item-${index + 1}`}
         >
-          <AccordionTrigger className="bg-gradient-to-r from-yellow-500 to-yellow-200 bg-clip-text p-6 text-left text-xl font-bold text-transparent">
+          <AccordionTrigger className=" p-6 text-left text-xl font-bold text-white">
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="px-6 pb-6 text-gray-300">

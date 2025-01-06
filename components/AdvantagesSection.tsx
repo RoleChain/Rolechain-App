@@ -1,19 +1,18 @@
 "use client";
 import Image from "next/image";
 
-import advantageIcon from "@/assets/icons/advantage.svg";
+import advantageIcon from "@/assets/images/star.webp";
 import useMatchMedia from "@/hooks/useMediaQuery";
 import { useState } from "react";
-import CTAButton from "./CTAButton";
 
 const BeforeCard = () => {
   return (
-    <div className="rounded-[30px] bg-gradient-to-b from-[#0028fa0f] to-[#0c03750d]">
+    <div className="rounded-[30px] bg-gradient-to-b from-[#0F1114] to-[#07090C]">
       <div className="flex flex-col gap-[30px] p-8 text-white/50">
         <div className="flex items-center gap-5">
           <Image src={advantageIcon} alt="Star icon" />
           <h2 className="text-[28px] font-bold text-white lg:text-5xl">
-            Before <span className="yellow-gradient-text">RoleChain</span>
+            Before <span className="text-white">RoleChain</span>
           </h2>
         </div>
 
@@ -63,7 +62,7 @@ const BeforeCard = () => {
           </button>
         </SignUpDialog> */}
 
-        <CTAButton>Make a First Step to Change</CTAButton>
+        <button className="bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] rounded-full px-6 py-3 text-sm font-medium text-white">Make a First Step to Change</button>
       </div>
     </div>
   );
@@ -71,12 +70,12 @@ const BeforeCard = () => {
 
 const AfterCard = () => {
   return (
-    <div className="rounded-[30px] bg-gradient-to-b from-[#45ffa61f] to-[#1e806514]">
+    <div className="rounded-[30px] bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6]">
       <div className="flex flex-col gap-[30px] p-8">
         <div className="flex items-center gap-5">
           <Image src={advantageIcon} alt="Star icon" />
           <h2 className="text-[28px] font-bold text-white lg:text-5xl">
-            After <span className="yellow-gradient-text">RoleChain</span>
+            After <span className="text-white">RoleChain</span>
           </h2>
         </div>
         <div className="space-y-[10px]">
@@ -137,7 +136,7 @@ const AfterCard = () => {
             </div>
           </button>
         </SignUpDialog> */}
-        <CTAButton>Create and own</CTAButton>
+        <button className="bg-white rounded-full px-6 py-3 text-sm font-medium text-black">Create and own</button>
       </div>
     </div>
   );
@@ -152,7 +151,7 @@ const AdvantagesSection = () => {
       id="advantages"
       className="mx-auto w-11/12 max-w-screen-xl scroll-mt-32 space-y-11 md:space-y-16"
     >
-      <h2 className="md:yellow-gradient-text py-2 text-center text-[42px] font-bold text-white md:text-5xl ">
+      <h2 className=" py-2 text-center text-[42px] font-bold text-white md:text-5xl ">
         Advantages
       </h2>
 
@@ -162,7 +161,7 @@ const AdvantagesSection = () => {
             <div
               onClick={() => setTab("before")}
               className={`border-b-4 px-6 py-2 transition-all ${
-                tab === "before" ? "border-lightYellow" : "border-gunmetal"
+                tab === "before" ? "border-white" : "border-gunmetal"
               }`}
             >
               Before
@@ -170,7 +169,7 @@ const AdvantagesSection = () => {
             <div
               onClick={() => setTab("after")}
               className={`border-b-4 px-6 py-2 transition-all ${
-                tab === "after" ? "border-lightYellow" : "border-gunmetal"
+                tab === "after" ? "border-white" : "border-gunmetal"
               }`}
             >
               After

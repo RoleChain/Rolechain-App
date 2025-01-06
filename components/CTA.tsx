@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import jamesPhoto from "@/assets/images/james-photo-2.png";
 import CTAForm from "./CTAForm";
 
 const CTA = () => {
@@ -19,7 +18,7 @@ const CTA = () => {
       </div>
 
       <div className="absolute -bottom-5 -right-8 z-10 ml-auto h-auto w-[280px] md:bottom-0 md:right-5 md:w-[380px] lg:w-[420px]">
-        <Image src={jamesPhoto} alt="James Crypto Guru" />
+        {/* <Image src={jamesPhoto} alt="James Crypto Guru" /> */}
       </div>
     </div>
   );

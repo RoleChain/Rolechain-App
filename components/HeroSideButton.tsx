@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "@/assets/images/logo.jpeg";
+import logo from "@/assets/images/logo.webp";
 import { useState } from "react";
 import { AskQuestionDialog } from "./AskQuestionDialog";
 

@@ -7,9 +7,7 @@ const FAQSection = () => {
         <div className="space-y-6 text-center">
           <h2 className="text-4xl font-bold md:text-5xl">
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-yellow-500 to-yellow-200 bg-clip-text text-transparent">
               Questions
-            </span>
           </h2>
           <h4 className="text-xl text-gray-400 md:text-2xl">
             Demystifying RoleChain&apos;s Decentralized AI Network

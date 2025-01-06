@@ -1,13 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Star, Zap, Trophy, Users } from 'lucide-react'
 import { Badge } from "./ui/badge"
+// import star from "@/assets/icons/SVG.webp"
+// import star from "@/assets/icons/SVG(1).webp"
+// import star from "@/assets/icons/SVG(2).webp"
+// import star from "@/assets/icons/SVG(3).webp"
+// import star from "@/assets/icons/SVG(4).webp"
+
 
 export default function EarlyAccessSection() {
   return (
-    <section className="w-full  py-12 md:py-24 lg:py-32">
+    <section className="w-full  py-12 md:py-24 lg:py-32 ">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <Badge variant="secondary" className="bg-yellow-500/10 text-yellow-500">
+          <Badge variant="secondary" className="bg-[#2A76EE]/10 text-[#2A76EE]">
             Early Access
           </Badge>
           <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-5xl">
@@ -20,7 +26,7 @@ export default function EarlyAccessSection() {
 
         <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
           {/* Early Adopter Benefits */}
-          <Card className="relative overflow-hidden border-yellow-500/20 bg-black/50">
+          <Card className="relative overflow-hidden border-gray-500/20 bg-black/50">
             <CardContent className="p-6">
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-white">Early Adopter Benefits</h3>
@@ -34,28 +40,28 @@ export default function EarlyAccessSection() {
                 </ul>
               </div>
             </CardContent>
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-purple-500/10 opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-50" />
           </Card>
 
           {/* Opportunity Card */}
-          <Card className="relative overflow-hidden border-yellow-500/20 bg-black/50">
+          <Card className="relative overflow-hidden border-gray-500/20 bg-black/50">
             <CardContent className="flex flex-col justify-between gap-4 p-6">
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-white">Market Opportunity</h3>
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-yellow-500">$1T</p>
+                  <p className="text-2xl font-bold text-white">$1T</p>
                   <p className="text-sm text-gray-400">Projected Web3 market size by 2030</p>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-yellow-500">43%</p>
+                  <p className="text-2xl font-bold text-white">43%</p>
                   <p className="text-sm text-gray-400">CAGR in AI adoption</p>
                 </div>
               </div>
-              <button className="w-full bg-yellow-500 text-black hover:bg-yellow-400 rounded-lg p-4 flex flex-row">
+              <button className="w-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-black  rounded-full p-4 flex flex-row">
                 Join Waitlist <ArrowRight className="ml-2 h-4 w-4 mt-1" />
               </button>
             </CardContent>
-            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-purple-500/10 opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-50" />
           </Card>
         </div>
 
@@ -73,19 +79,19 @@ export default function EarlyAccessSection() {
 
 const benefits = [
   {
-    icon: <Star className="h-5 w-5 text-yellow-500" />,
+    icon: <Star className="h-5 w-5 text-[linear-gradient(to right, #FF6600, #F700F7, #0078F6)]" />,
     text: "Priority access to beta features and testing",
   },
   {
-    icon: <Zap className="h-5 w-5 text-yellow-500" />,
+    icon: <Zap className="h-5 w-5 " />,
     text: "Exclusive early adopter token allocations",
   },
   {
-    icon: <Trophy className="h-5 w-5 text-yellow-500" />,
+    icon: <Trophy className="h-5 w-5 " />,
     text: "Founding member status with special privileges",
   },
   {
-    icon: <Users className="h-5 w-5 text-yellow-500" />,
+    icon: <Users className="h-5 w-5 " />,
     text: "Direct input on product development and features",
   },
 ]

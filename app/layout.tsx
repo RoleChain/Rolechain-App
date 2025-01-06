@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 export const metadata: Metadata = {
   title: "rolechain",
-  description: "ai-agent",
+  description: "ai-agents",
 };
 
 export default function RootLayout({
