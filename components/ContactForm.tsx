@@ -107,7 +107,7 @@ const ContactForm = () => {
             <input
               type="checkbox"
               id="privacyPolicy"
-              className="border-pink-300 bg-gunmetal accent-pink-300 checked:bg-pink-300 checked:accent-pink-300 focus:text-pink-300 h-4 w-4 appearance-none rounded-full border"
+              className="border-pink-300 bg-gunmetal accent-pink-300 checked:bg-pink-300 checked:accent-pink-300 focus:text-pink-300 h-4 w-4 appearance-none rounded-full border "
               {...register("privacyPolicy", { required: true })}
             />
             <p className="text-sm">

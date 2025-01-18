@@ -58,7 +58,7 @@ const DownloadForm = () => {
         <input
           type="string"
           placeholder="Enter your email"
-          className="text-white/20 w-full rounded-lg border bg-white/80 px-5 py-[10px]"
+          className="text-black w-full rounded-lg border bg-white/80 px-5 py-[10px]"
           {...register("email", {
             required: true,
             pattern:
@@ -91,7 +91,7 @@ const DownloadForm = () => {
             <input
               type="checkbox"
               id="privacy-policy"
-              className="h-4 w-4 appearance-none rounded-full bg-white/60 "
+              className="h-4 w-4 appearance-none rounded-full bg-white/60"
               {...register("privacyPolicy", { required: true })}
             />
             <p className="text-white text-xs">
