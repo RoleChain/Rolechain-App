@@ -84,7 +84,7 @@ const Footer = () => {
                     href="mailto:contact@rolechain.io"
                     className="text-[#E21AEF] hover:underline"
                   >
-                    hi@rolechain.io
+                    hi@rolechain.org
                   </Link>
                 </p>
               </div>
