@@ -81,7 +81,7 @@ const Footer = () => {
                 <p className="text-sm text-gray-400">
                   or via email:{" "}
                   <Link
-                    href="mailto:contact@rolechain.io"
+                    href="mailto:hi@rolechain.org"
                     className="text-[#E21AEF] hover:underline"
                   >
                     hi@rolechain.org

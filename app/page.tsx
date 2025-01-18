@@ -19,6 +19,7 @@ import DemoSection from "@/components/DemoSection";
 import FeaturesList from "@/components/Feature-list";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 import CoreCapabilities from "@/components/CoreCapabilities";
+import TeamSection from "@/components/Team";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
         <FeaturesList/>
         {/* <TopicsSection /> */}
         <CoreCapabilities/>
-        {/* <CTA /> */}
+        <TeamSection/>
         <FAQSection />
         <ContactSection />
         <div className="fixed left-6 top-32 z-10 hidden w-fit text-white xl:block">
