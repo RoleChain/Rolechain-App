@@ -33,6 +33,10 @@ const navLinks = [
     title: "Who is it for",
     link: "#who-is-it-for",
   },
+  {
+    title: "Team",
+    link: "#team",
+  },
 
   {
     title: "FAQ",

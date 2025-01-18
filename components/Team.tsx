@@ -25,7 +25,7 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className=" py-16 px-4">
+    <section className=" py-16 px-4" id='team'>
         <div className='mb-[70px]'>
         <h1 className="text-white text-4xl font-bold text-center">Our Team</h1>
         
