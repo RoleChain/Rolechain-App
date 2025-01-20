@@ -25,35 +25,35 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className=" py-16 px-4" id='team'>
+    <section className="py-16 px-4" id='team'>
         <div className='mb-[70px]'>
-        <h1 className="text-white text-4xl font-bold text-center">Our Team</h1>
+        <h1 className="text-white text-3xl md:text-4xl font-bold text-center">Our Team</h1>
         
-        <p className="text-white/60 text-lg text-center mt-1">Demystifying RoleChain&apos;s Decentralized AI Network</p>
+        <p className="text-white/60 text-base md:text-lg text-center mt-1">Demystifying RoleChain&apos;s Decentralized AI Network</p>
         </div>
 
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-12">
           {teamMembers.map((member, index) => (
             <div
               key={member.name}
               className={`flex flex-col items-center ${
-                index >= 4 ? 'md:col-span-2 lg:col-span-1 md:translate-x-[50%]' : ''
+                index >= 4 ? 'lg:col-span-1 md:translate-x-0 lg:translate-x-0' : ''
               }`}
             >
-              <div className="relative w-[200px] h-[200px] mb-4">
+              <div className="relative w-[150px] h-[150px] md:w-[180px] md:h-[180px] lg:w-[200px] lg:h-[200px] mb-4">
                 <Image
                   src={member.image}
-                  alt={`${member.name}&apos;s profile`}
+                  alt={`${member.name}'s profile`}
                   fill
                   className="rounded-full object-cover"
-                  placeholder="blur" // Add blur for better UX
+                  placeholder="blur"
                 />
               </div>
-              <h3 className="text-white text-2xl font-medium text-center">
+              <h3 className="text-white text-xl md:text-2xl font-medium text-center">
                 {member.name}
               </h3>
-              <p className="text-fuchsia-500 text-lg text-center mt-1">
+              <p className="text-fuchsia-500 text-base md:text-lg text-center mt-1">
                 {member.role}
               </p>
             </div>

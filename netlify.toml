@@ -5,5 +5,5 @@ publish = "build"
 [[redirects]]
 from = "http:*"
 to = "https://:splat"
-status = 301
+status = 200
 force = true
