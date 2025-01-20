@@ -15,6 +15,12 @@ import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const [windowWidth, setWindowWidth] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: ''
+  });
+  const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
     // Set initial width
@@ -37,6 +43,34 @@ const HeroSection = () => {
       const y = responsiveRadius * Math.sin(angle);
       return { x, y, angle: (angle * 180) / Math.PI };
     });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const userEmailResponse = await fetch('https://api.rolechain.org/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          name: formData.name,
+        }),
+      });
+
+      if (userEmailResponse.ok) {
+        setShowPopup(false);
+        setFormData({ name: '', email: '' });
+        setShowSuccess(true);
+        // Hide success message after 3 seconds
+        setTimeout(() => setShowSuccess(false), 3000);
+      } else {
+        throw new Error('Failed to send emails');
+      }
+    } catch (error) {
+      console.error('Error sending emails:', error);
+    }
   };
 
   return (
@@ -89,7 +123,10 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-center justify-center gap-3 md:justify-start">
-            <button className="flex flex-row rounded-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] p-4 text-white hover:opacity-90">
+            <button 
+              onClick={() => setShowPopup(true)}
+              className="flex flex-row rounded-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] p-4 text-white hover:opacity-90"
+            >
               Get Started
               <LuArrowUpRight className="ml-2 mt-1 h-4 w-4" />
             </button>
@@ -144,6 +181,68 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Popup Form */}
+      {showPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+          <div className="relative w-full max-w-md rounded-2xl bg-gradient-to-b from-[#3C1542] to-[#1E1E2E] p-8 shadow-xl">
+            <button 
+              onClick={() => setShowPopup(false)}
+              className="absolute right-6 top-6 text-gray-400 hover:text-white transition-colors"
+            >
+              ✕
+            </button>
+            <div className="mb-6 space-y-2">
+              <h2 className="text-2xl font-bold text-white">Get Early Access</h2>
+              <p className="text-sm text-gray-300">Join our exclusive beta testing. We'll send the MVP access link to your email.</p>
+            </div>
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  value={formData.name}
+                  onChange={(e) => setFormData({...formData, name: e.target.value})}
+                  className="mt-1 w-full rounded-lg bg-[#272638] p-3 text-white placeholder-gray-500 border border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({...formData, email: e.target.value})}
+                  className="mt-1 w-full rounded-lg bg-[#272638] p-3 text-white placeholder-gray-500 border border-gray-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 transition-colors"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full rounded-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] p-4 text-white font-medium hover:opacity-90 transform transition-all duration-200 hover:scale-[0.98]"
+              >
+                Get Access
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Success Message */}
+      {showSuccess && (
+        <div className="fixed bottom-4 right-4 z-50 rounded-lg bg-green-500 p-4 text-white shadow-lg">
+          <div className="flex items-center gap-2">
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p>Successfully joined the waitlist!</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
