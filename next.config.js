@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     trailingSlash: false,
+    output: 'export',
+    distDir: 'build',
     async headers() {
         return [
           {
