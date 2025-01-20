@@ -29,7 +29,7 @@ export default function TeamSection() {
         <div className='mb-[70px]'>
         <h1 className="text-white text-4xl font-bold text-center">Our Team</h1>
         
-        <p className="text-white/60 text-lg text-center mt-1">Demystifying RoleChain's Decentralized AI Network</p>
+        <p className="text-white/60 text-lg text-center mt-1">Demystifying RoleChain&apos;s Decentralized AI Network</p>
         </div>
 
       <div className="max-w-6xl mx-auto">
@@ -44,7 +44,7 @@ export default function TeamSection() {
               <div className="relative w-[200px] h-[200px] mb-4">
                 <Image
                   src={member.image}
-                  alt={`${member.name}'s profile`}
+                  alt={`${member.name}&apos;s profile`}
                   fill
                   className="rounded-full object-cover"
                   placeholder="blur" // Add blur for better UX

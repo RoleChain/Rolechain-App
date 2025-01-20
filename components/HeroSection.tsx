@@ -194,7 +194,7 @@ const HeroSection = () => {
             </button>
             <div className="mb-6 space-y-2">
               <h2 className="text-2xl font-bold text-white">Get Early Access</h2>
-              <p className="text-sm text-gray-300">Join our exclusive beta testing. We'll send the MVP access link to your email.</p>
+              <p className="text-sm text-gray-300">Join our exclusive beta testing. We&apos;ll send the MVP access link to your email.</p>
             </div>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
