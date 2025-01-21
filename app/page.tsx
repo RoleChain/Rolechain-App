@@ -20,6 +20,7 @@ import FeaturesList from "@/components/Feature-list";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 import CoreCapabilities from "@/components/CoreCapabilities";
 import TeamSection from "@/components/Team";
+import PartnersSection from "@/components/partners";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
       <main className="space-y-[90px] scroll-smooth bg-primary text-white md:space-y-32">
         <HeroSection />
         <InfoSection />
-
+        <PartnersSection/>
         <ReviewSection />
         <AdvantagesSection />
         {/* <TestimonialSection /> */}
@@ -44,6 +45,7 @@ export default function Home() {
         <CoreCapabilities/>
         <TeamSection/>
         <FAQSection />
+        
         <ContactSection />
         <div className="fixed left-6 top-32 z-10 hidden w-fit text-white xl:block">
           <div className="grid h-full w-full grid-cols-1 gap-6 ">

@@ -12,6 +12,7 @@ import icon5 from "@/assets/hero-icon/icon5.webp"
 import icon1 from "@/assets/hero-icon/icon1.webp"
 import icon6 from "@/assets/hero-icon/icon.svg"
 import { useState, useEffect } from "react";
+import PartnerLogos from "./partners";
 
 const HeroSection = () => {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -243,6 +244,9 @@ const HeroSection = () => {
           </div>
         </div>
       )}
+
+      {/* Position PartnerLogos at the bottom right */}
+      
     </section>
   );
 };
