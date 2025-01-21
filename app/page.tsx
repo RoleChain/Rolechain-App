@@ -29,19 +29,16 @@ export default function Home() {
       <main className="space-y-[90px] scroll-smooth bg-primary text-white md:space-y-32">
         <HeroSection />
         <InfoSection />
+        <div className="h-[10px]"></div>
         <PartnersSection/>
-        <ReviewSection />
+        {/* <ReviewSection /> */}
         <AdvantagesSection />
-        {/* <TestimonialSection /> */}
         <EarlyAccessSection/>
         <CtaFileDownload />
         <CourseInfoSection />
-        {/* <PricingSection /> */}
         <DemoSection/>
 
-        {/* <JamesInfoSection /> */}
         <FeaturesList/>
-        {/* <TopicsSection /> */}
         <CoreCapabilities/>
         <TeamSection/>
         <FAQSection />

@@ -13,7 +13,7 @@ const partnerLogos = [
 
 export default function PartnersSection() {
   return (
-    <section className="min-h-screen  py-16 px-4 md:px-8">
+    <section className="min-h-screen  py-16 px-4 md:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-4 mb-12">
           <h2 className="text-pink-500 font-medium"> Our Partners</h2>
