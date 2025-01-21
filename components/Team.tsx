@@ -38,7 +38,7 @@ export default function TeamSection() {
             <div
               key={member.name}
               className={`flex flex-col items-center ${
-                index >= 4 ? 'lg:col-span-1 md:translate-x-0 lg:translate-x-0' : ''
+                index > 3 ? 'lg:col-span-1 md:translate-x-0 lg:translate-x-[50%]' : ''
               }`}
             >
               <div className="relative w-[150px] h-[150px] md:w-[180px] md:h-[180px] lg:w-[200px] lg:h-[200px] mb-4">
@@ -63,3 +63,4 @@ export default function TeamSection() {
     </section>
   )
 }
+
