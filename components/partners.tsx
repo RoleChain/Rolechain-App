@@ -52,7 +52,10 @@ export default function PartnersSection() {
               ))}
             </div>
           </div>
-          <button
+          <a
+            href="https://calendly.com/harsh-rolechain"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white 
                      font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
           >
@@ -60,7 +63,7 @@ export default function PartnersSection() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>
