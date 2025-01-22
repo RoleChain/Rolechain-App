@@ -193,13 +193,13 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: "Mario Christian",
-    role: "CMO",
+    role: "CMO & Co-founder",
     image: mario,
     linkedin: "https://www.linkedin.com/in/mario-christian-992265143/",
   },
   {
     name: "Harsh Raj",
-    role: "CTO",
+    role: "CTO & Co-founder",
     image: harsh,
     linkedin: "https://www.linkedin.com/in/harsh-raj-2b8709129/",
   },
