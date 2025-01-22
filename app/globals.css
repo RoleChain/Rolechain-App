@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer components {
   .yellow-gradient-text {
     @apply bg-gradient-to-r from-lightYellow to-darkYellow bg-clip-text text-transparent
