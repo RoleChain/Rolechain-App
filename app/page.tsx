@@ -2,16 +2,11 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import InfoSection from "@/components/InfoSection";
 import HeroSection from "@/components/HeroSection";
-import VideoSection from "@/components/VideoSection";
-import ReviewSection from "@/components/ReviewSection";
+
 import AdvantagesSection from "@/components/AdvantagesSection";
-// import TestimonialSection from "@/components/TestimonialSection";
 import CtaFileDownload from "@/components/CtaFileDownload";
 import CourseInfoSection from "@/components/CourseInfoSection";
-// import PricingSection from "@/components/PricingSection";
-// import JamesInfoSection from "@/components/JamesInfoSection";
-// import TopicsSection from "@/components/TopicsSection";
-// import CTA from "@/components/CTA";
+
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer, { socialLinks } from "@/components/Footer";
@@ -31,7 +26,6 @@ export default function Home() {
         <InfoSection />
         <div className="h-[10px]"></div>
         <PartnersSection/>
-        {/* <ReviewSection /> */}
         <AdvantagesSection />
         <EarlyAccessSection/>
         <CtaFileDownload />
