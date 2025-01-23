@@ -16,6 +16,7 @@ import EarlyAccessSection from "@/components/EarlyAccessSection";
 import CoreCapabilities from "@/components/CoreCapabilities";
 import TeamSection from "@/components/Team";
 import PartnersSection from "@/components/partners";
+import Roadmap from "@/components/Roadmap";
 
 export default function Home() {
   return (
@@ -26,7 +27,9 @@ export default function Home() {
         <InfoSection />
         <div className="h-[10px]"></div>
         <PartnersSection/>
+        
         <AdvantagesSection />
+        <Roadmap/>
         <EarlyAccessSection/>
         <CtaFileDownload />
         <CourseInfoSection />
