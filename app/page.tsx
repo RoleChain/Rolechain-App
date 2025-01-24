@@ -29,7 +29,7 @@ export default function Home() {
         <PartnersSection/>
         
         <AdvantagesSection />
-        <Roadmap/>
+        
         <EarlyAccessSection/>
         <CtaFileDownload />
         <CourseInfoSection />
@@ -37,6 +37,7 @@ export default function Home() {
 
         <FeaturesList/>
         <CoreCapabilities/>
+        <Roadmap/>
         <TeamSection/>
         <FAQSection />
         
