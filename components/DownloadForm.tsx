@@ -12,7 +12,11 @@ type Inputs = {
   privacyPolicy: boolean;
 };
 
-const DownloadForm = () => {
+interface DownloadFormProps {
+  onValidEmail: () => void;
+}
+
+const DownloadForm: React.FC<DownloadFormProps> = ({ onValidEmail }) => {
   const [loading, setLoading] = useState(false);
 
   const {
@@ -27,14 +31,16 @@ const DownloadForm = () => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
       setLoading(true);
-      const response = await axios.post("/api/subscribe", data);
-
-      const link = document.createElement("a");
-      link.download = "RoleChain Guide";
-      link.href = "";
+      // First call onValidEmail callback
+      onValidEmail();
+      // Create a link element and trigger the download
+      const link = document.createElement('a');
+      link.href = '/docs.pdf';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
       link.click();
-
-      toast.success("Your download has been started");
+      document.body.removeChild(link);
     } catch (error: any) {
       const { data } = error.response;
       toast.error(data.error);
@@ -71,7 +77,7 @@ const DownloadForm = () => {
       </div>
 
       <div className="flex flex-wrap items-center gap-[14px]">
-        {/* <button
+        <button
           disabled={loading}
           className="bg-primary grid  min-w-36 place-items-center whitespace-nowrap rounded-full text-sm font-medium text-white disabled:opacity-70"
         >
@@ -80,12 +86,12 @@ const DownloadForm = () => {
               "Please wait"
             ) : (
               <>
-                <p>Get free pdf</p>
+                <p>Claim</p>
                 <LuFileText size={18} className="text-white" />
               </>
             )}
           </div>
-        </button> */}
+        </button>
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <input

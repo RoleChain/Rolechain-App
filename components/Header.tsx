@@ -80,12 +80,12 @@ const Header = () => {
          
           <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] text-sm  font-medium text-white md:grid">
             <Link
-              href=""
+              href="/docs.pdf"
               target="_blank"
               rel="noreferrer noopener"
               className="flex items-center gap-[10px] px-6 py-3"
             >
-              <p>RoleChain</p>
+              <p>Whitepaper</p>
               <LuArrowUpRight size={18} className="text-white" />
             </Link>
           </button>
