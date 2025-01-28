@@ -20,9 +20,9 @@ export default function DemoSection() {
               tapping into the trillion-dollar Web3 market potential.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <button className="inline-flex h-12 items-center justify-center px-8 text-sm font-medium text-black transition-all hover:opacity-90 bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] rounded-full">
+              <a href="https://beta.rolechain.org/" className="inline-flex h-12 items-center justify-center px-8 text-sm font-medium text-black transition-all hover:opacity-90 bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] rounded-full">
                 Start Building
-              </button>
+              </a>
               <button className="inline-flex h-12 items-center justify-center bg-[#1C1C1C] px-8 text-sm font-medium text-white transition-all rounded-full">
                 Explore Network
               </button>
