@@ -21,10 +21,10 @@ const navLinks = [
     link: "#social",
   },
   
-  {
-    title: "Who is it for",
-    link: "#who-is-it-for",
-  },
+  // {
+  //   title: "Who is it for",
+  //   link: "#who-is-it-for",
+  // },
   {
     title: "Capabilities",
     link: "#capabilities",

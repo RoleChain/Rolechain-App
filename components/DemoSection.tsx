@@ -23,9 +23,9 @@ export default function DemoSection() {
               <a href="https://beta.rolechain.org/" className="inline-flex h-12 items-center justify-center px-8 text-sm font-medium text-black transition-all hover:opacity-90 bg-gradient-to-b from-[#FF6600] via-[#F700F7] to-[#0078F6] rounded-full">
                 Start Building
               </a>
-              <button className="inline-flex h-12 items-center justify-center bg-[#1C1C1C] px-8 text-sm font-medium text-white transition-all rounded-full">
+              <a href="https://www.linkedin.com/company/rolechain/posts/?feedView=all" className="inline-flex h-12 items-center justify-center bg-[#1C1C1C] px-8 text-sm font-medium text-white transition-all rounded-full">
                 Explore Network
-              </button>
+              </a>
             </div>
           </div>
 
