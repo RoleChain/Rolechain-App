@@ -281,7 +281,7 @@ const teamMembers: TeamMember[] = [
     image: nikhil,
     linkedin:
       "https://www.linkedin.com/in/nikhilsinghux/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    // telegram: "https://t.me/nikhilsinghux",
+    telegram: "@nikhil_ux",
   },
   {
     name: "Rohit Kulkarni",
@@ -297,8 +297,8 @@ const teamMembers: TeamMember[] = [
     role: "Full Stack Developer",
     image: naba,
     linkedin: "https://www.linkedin.com/in/mrmissong/",
-    // telegram: "https://t.me/mrmissong",
-    // github: "https://github.com/mrmissong",
+    telegram: "@mrmissong",
+    github: "github.com/mrmissong",
   },
   {
     name: "Abbas Abidi",
