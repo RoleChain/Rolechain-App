@@ -233,17 +233,29 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/harsh-raj-2b8709129/",
   },
   {
+    name: "Pranjali Chouhan",
+    role: "Head of AI & Web3 Infra",
+    image: pranjali,
+    linkedin: "https://www.linkedin.com/in/pranjali-chouhan-74b202245/",
+  },
+  {
     name: "Vivek Pandav",
     role: "Head of Design",
     image: vivek,
     linkedin: "https://www.linkedin.com/in/vivek-pandav-uiux-product-designer/",
   },
   {
-    name: "Pranjali Chouhan",
-    role: "Head of AI & Web3 Infra",
-    image: pranjali,
-    linkedin: "https://www.linkedin.com/in/pranjali-chouhan-74b202245/",
+    name: "Sakshi Raj",
+    role: "Communications Lead ",
+    image: sakshi,
+    linkedin: "https://www.linkedin.com/in/sakshi-raj-b2b0761a7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
+  // {
+  //   name: "Pranjali Chouhan",
+  //   role: "Head of AI & Web3 Infra",
+  //   image: pranjali,
+  //   linkedin: "https://www.linkedin.com/in/pranjali-chouhan-74b202245/",
+  // },
   {
     name: "Manav Singh",
     role: "CBDO",
@@ -256,12 +268,7 @@ const teamMembers: TeamMember[] = [
     image: tarun,
     linkedin: "https://www.linkedin.com/in/tarun-lala1/",
   },
-  {
-    name: "Sakshi Raj",
-    role: "Communications Lead ",
-    image: sakshi,
-    linkedin: "https://www.linkedin.com/in/sakshi-raj-b2b0761a7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
+  
   {
     name: "Nikhil Singh",
     role: "UI/UX Designer",
