@@ -266,7 +266,7 @@ const teamMembers: TeamMember[] = [
     role: "CBDO",
     image: manav,
     linkedin: "https://www.linkedin.com/in/manav24/",
-    // telegram: "https://t.me/manav24",
+    telegram: "@manavsingh947",
   },
   {
     name: "Tarun Lala",
