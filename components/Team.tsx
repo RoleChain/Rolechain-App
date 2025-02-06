@@ -295,8 +295,8 @@ export default function TeamSection() {
   return (
     <section className="px-4 md:mx-4" id="team">
       <div className="mx-auto max-w-5xl text-center">
-        <h1 className="mb-12 text-4xl font-bold text-white md:text-5xl">Our Team</h1>
-
+        <h1 className="mb-2 text-4xl font-bold text-white md:text-5xl">Our Team</h1>
+        <h3 className="text-white/50 mb-10">Demystifying RoleChain's Decentralized AI Network</h3>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center">
