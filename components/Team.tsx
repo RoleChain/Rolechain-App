@@ -221,7 +221,7 @@ const teamMembers: TeamMember[] = [
     image: sanjeev,
     linkedin: "https://www.linkedin.com/in/sanjeevvepsun/",
     telegram: "@sanjeevseengh",
-    // github: "https://github.com/sanjeevvepsun",
+    
   },
   {
     name: "Mario Christian",
@@ -251,7 +251,7 @@ const teamMembers: TeamMember[] = [
     role: "Head of Design",
     image: vivek,
     linkedin: "https://www.linkedin.com/in/vivek-pandav-uiux-product-designer/",
-    // telegram: "https://t.me/vivek_pandav",
+    telegram: "@Vivek_pandav",
   },
   {
     name: "Sakshi Raj",
