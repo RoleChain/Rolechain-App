@@ -1,5 +1,3 @@
-
-
 // "use client"
 
 // import { useState, useRef, useEffect } from "react"
@@ -18,7 +16,6 @@
 // import naba from "@/assets/images/Naba.png"
 // import meerabbas from "@/assets/images/Meerabbas.png"
 // import sakshi from "@/assets/images/Sakshi.png"
-
 
 // interface TeamMember {
 //   name: string
@@ -64,7 +61,7 @@
 //     image: manav,
 //     linkedin: "https://www.linkedin.com/in/manav24/",
 //   },
-  
+
 //   {
 //     name: "Tarun Lala",
 //     role: "SMM",
@@ -187,31 +184,31 @@
 //   )
 // }
 
-"use client"
+"use client";
 
-import Image, { type StaticImageData } from "next/image"
-import { Linkedin, Github, Send } from "lucide-react"
-import Link from "next/link"
-import sanjeev from "@/assets/images/Sanjeev.png"
-import mario from "@/assets/images/Mario.png"
-import harsh from "@/assets/images/Harsh.png"
-import vivek from "@/assets/images/Vivek.png"
-import pranjali from "@/assets/images/Pranjali.png"
-import manav from "@/assets/images/Manav.png"
-import tarun from "@/assets/images/Tarun.png"
-import nikhil from "@/assets/images/Nikhil.png"
-import rohit from "@/assets/images/Rohit.png"
-import naba from "@/assets/images/Naba.png"
-import meerabbas from "@/assets/images/Abbas.png"
-import sakshi from "@/assets/images/Sakshi.png"
+import Image, { type StaticImageData } from "next/image";
+import { Linkedin, Github, Send } from "lucide-react";
+import Link from "next/link";
+import sanjeev from "@/assets/images/Sanjeev.png";
+import mario from "@/assets/images/Mario.png";
+import harsh from "@/assets/images/Harsh.png";
+import vivek from "@/assets/images/Vivek.png";
+import pranjali from "@/assets/images/Pranjali.png";
+import manav from "@/assets/images/Manav.png";
+import tarun from "@/assets/images/Tarun.png";
+import nikhil from "@/assets/images/Nikhil.png";
+import rohit from "@/assets/images/Rohit.png";
+import naba from "@/assets/images/Naba.png";
+import meerabbas from "@/assets/images/Abbas.png";
+import sakshi from "@/assets/images/Sakshi.png";
 
 interface TeamMember {
-  name: string
-  role: string
-  image: StaticImageData
-  linkedin: string
-  telegram?: string
-  github?: string
+  name: string;
+  role: string;
+  image: StaticImageData;
+  linkedin: string;
+  telegram?: string;
+  github?: string;
 }
 
 const teamMembers: TeamMember[] = [
@@ -221,7 +218,6 @@ const teamMembers: TeamMember[] = [
     image: sanjeev,
     linkedin: "https://www.linkedin.com/in/sanjeevvepsun/",
     telegram: "@sanjeevseengh",
-    
   },
   {
     name: "Mario Christian",
@@ -308,14 +304,18 @@ const teamMembers: TeamMember[] = [
     telegram: "@Abidi_Abbas",
     github: "https://github.com/MdAbbas110",
   },
-]
+];
 
 export default function TeamSection() {
   return (
     <section className="px-4 md:mx-4" id="team">
       <div className="mx-auto max-w-5xl text-center">
-        <h1 className="mb-2 text-4xl font-bold text-white md:text-5xl">Our Team</h1>
-        <h3 className="text-white/50 mb-10">Demystifying RoleChain&apos;s Decentralized AI Network</h3>
+        <h1 className="mb-2 text-4xl font-bold text-white md:text-5xl">
+          Our Team
+        </h1>
+        <h3 className="mb-10 text-white/50">
+          Demystifying RoleChain&apos;s Decentralized AI Network
+        </h3>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           {teamMembers.map((member) => (
             <div key={member.name} className="flex flex-col items-center">
@@ -328,8 +328,12 @@ export default function TeamSection() {
                   placeholder="blur"
                 />
               </div>
-              <h3 className="text-center text-lg font-medium text-white">{member.name}</h3>
-              <p className="mt-1 text-center text-sm text-fuchsia-500">{member.role}</p>
+              <h3 className="text-center text-lg font-medium text-white">
+                {member.name}
+              </h3>
+              <p className="mt-1 text-center text-sm text-fuchsia-500">
+                {member.role}
+              </p>
               <div className="mt-2 flex space-x-2">
                 <Link
                   href={member.linkedin}
@@ -342,7 +346,9 @@ export default function TeamSection() {
                 {member.telegram && (
                   <Link
                     href={
-                      member.telegram.startsWith("@") ? `https://t.me/${member.telegram.slice(1)}` : member.telegram
+                      member.telegram.startsWith("@")
+                        ? `https://t.me/${member.telegram.slice(1)}`
+                        : member.telegram
                     }
                     target="_blank"
                     rel="noopener noreferrer"
@@ -367,6 +373,5 @@ export default function TeamSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
