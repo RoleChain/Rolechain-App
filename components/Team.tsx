@@ -190,7 +190,7 @@
 "use client"
 
 import Image, { type StaticImageData } from "next/image"
-import { Linkedin } from "lucide-react"
+import { Linkedin, Github, Send } from "lucide-react"
 import Link from "next/link"
 import sanjeev from "@/assets/images/Sanjeev.png"
 import mario from "@/assets/images/Mario.png"
@@ -202,15 +202,16 @@ import tarun from "@/assets/images/Tarun.png"
 import nikhil from "@/assets/images/Nikhil.png"
 import rohit from "@/assets/images/Rohit.png"
 import naba from "@/assets/images/Naba.png"
- import meerabbas from "@/assets/images/Abbas.png"
- import sakshi from "@/assets/images/Sakshi.png"
-
+import meerabbas from "@/assets/images/Abbas.png"
+import sakshi from "@/assets/images/Sakshi.png"
 
 interface TeamMember {
   name: string
   role: string
   image: StaticImageData
   linkedin: string
+  telegram?: string
+  github?: string
 }
 
 const teamMembers: TeamMember[] = [
@@ -219,62 +220,68 @@ const teamMembers: TeamMember[] = [
     role: "CEO & Co-founder",
     image: sanjeev,
     linkedin: "https://www.linkedin.com/in/sanjeevvepsun/",
+    telegram: "@sanjeevseengh",
+    // github: "https://github.com/sanjeevvepsun",
   },
   {
     name: "Mario Christian",
     role: "CMO & Co-founder",
     image: mario,
     linkedin: "https://www.linkedin.com/in/mario-christian-992265143/",
+    telegram: "@mariodecentralized",
   },
   {
     name: "Harsh Raj",
     role: "CTO & Co-founder",
     image: harsh,
     linkedin: "https://www.linkedin.com/in/harsh-raj-2b8709129/",
+    telegram: "@harshtechilia",
+    github: "https://github.com/Harsh48",
   },
   {
     name: "Pranjali Chouhan",
     role: "Head of AI & Web3 Infra",
     image: pranjali,
     linkedin: "https://www.linkedin.com/in/pranjali-chouhan-74b202245/",
+    telegram: "@Pranjali_200",
+    github: "https://github.com/PranjaliChouhan",
   },
   {
     name: "Vivek Pandav",
     role: "Head of Design",
     image: vivek,
     linkedin: "https://www.linkedin.com/in/vivek-pandav-uiux-product-designer/",
+    // telegram: "https://t.me/vivek_pandav",
   },
   {
     name: "Sakshi Raj",
     role: "Communications Lead ",
     image: sakshi,
-    linkedin: "https://www.linkedin.com/in/sakshi-raj-b2b0761a7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedin:
+      "https://www.linkedin.com/in/sakshi-raj-b2b0761a7/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    telegram: "@Sakshirajj",
   },
-  // {
-  //   name: "Pranjali Chouhan",
-  //   role: "Head of AI & Web3 Infra",
-  //   image: pranjali,
-  //   linkedin: "https://www.linkedin.com/in/pranjali-chouhan-74b202245/",
-  // },
   {
     name: "Manav Singh",
     role: "CBDO",
     image: manav,
     linkedin: "https://www.linkedin.com/in/manav24/",
+    // telegram: "https://t.me/manav24",
   },
   {
     name: "Tarun Lala",
     role: "SMM",
     image: tarun,
     linkedin: "https://www.linkedin.com/in/tarun-lala1/",
+    // telegram: "https://t.me/tarunlala1",
   },
-  
   {
     name: "Nikhil Singh",
     role: "UI/UX Designer",
     image: nikhil,
     linkedin:
       "https://www.linkedin.com/in/nikhilsinghux/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    // telegram: "https://t.me/nikhilsinghux",
   },
   {
     name: "Rohit Kulkarni",
@@ -282,20 +289,25 @@ const teamMembers: TeamMember[] = [
     image: rohit,
     linkedin:
       "https://www.linkedin.com/in/rohit-kulkarni-4941a2181/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    // telegram: "https://t.me/rohitkulkarni1",
+    // github: "https://github.com/rohitkulkarni1",
   },
   {
     name: "Naba Missong",
     role: "Full Stack Developer",
     image: naba,
     linkedin: "https://www.linkedin.com/in/mrmissong/",
+    // telegram: "https://t.me/mrmissong",
+    // github: "https://github.com/mrmissong",
   },
   {
-  name: "MeerAbbas",
-  role: "Full Stack Developer",
-  image: meerabbas,
-  linkedin: "https://www.linkedin.com/in/mohammad-abbas110/",
- },
-  
+    name: "Abbas Abidi",
+    role: "Full Stack Developer",
+    image: meerabbas,
+    linkedin: "https://www.linkedin.com/in/mohammad-abbas110/",
+    telegram: "@Abidi_Abbas",
+    github: "https://github.com/MdAbbas110",
+  },
 ]
 
 export default function TeamSection() {
@@ -318,14 +330,38 @@ export default function TeamSection() {
               </div>
               <h3 className="text-center text-lg font-medium text-white">{member.name}</h3>
               <p className="mt-1 text-center text-sm text-fuchsia-500">{member.role}</p>
-              <Link
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 rounded-lg bg-black/50 p-2 text-white transition-colors hover:text-fuchsia-500"
-              >
-                <Linkedin size={24} />
-              </Link>
+              <div className="mt-2 flex space-x-2">
+                <Link
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-black/50 p-2 text-white transition-colors hover:text-fuchsia-500"
+                >
+                  <Linkedin size={20} />
+                </Link>
+                {member.telegram && (
+                  <Link
+                    href={
+                      member.telegram.startsWith("@") ? `https://t.me/${member.telegram.slice(1)}` : member.telegram
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg bg-black/50 p-2 text-white transition-colors hover:text-fuchsia-500"
+                  >
+                    <Send size={20} />
+                  </Link>
+                )}
+                {member.github && (
+                  <Link
+                    href={member.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg bg-black/50 p-2 text-white transition-colors hover:text-fuchsia-500"
+                  >
+                    <Github size={20} />
+                  </Link>
+                )}
+              </div>
             </div>
           ))}
         </div>
