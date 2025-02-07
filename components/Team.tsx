@@ -285,8 +285,8 @@ const teamMembers: TeamMember[] = [
     image: rohit,
     linkedin:
       "https://www.linkedin.com/in/rohit-kulkarni-4941a2181/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    // telegram: "https://t.me/rohitkulkarni1",
-    // github: "https://github.com/rohitkulkarni1",
+    telegram: "@rohit22k",
+    github: " https://github.com/rohitkulkarni22",
   },
   {
     name: "Naba Missong",
