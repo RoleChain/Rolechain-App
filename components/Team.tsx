@@ -289,7 +289,7 @@ const teamMembers: TeamMember[] = [
     github: " https://github.com/rohitkulkarni22",
   },
   {
-    name: "Naba",
+    name: "Missong",
     role: "Full Stack Developer",
     image: naba,
     linkedin: "https://www.linkedin.com/in/mrmissong/",
