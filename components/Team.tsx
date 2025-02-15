@@ -213,21 +213,21 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Sanjeev Kumar",
+    name: "Sanjeev",
     role: "CEO & Co-founder",
     image: sanjeev,
     linkedin: "https://www.linkedin.com/in/sanjeevvepsun/",
     telegram: "@sanjeevseengh",
   },
   {
-    name: "Mario Christian",
+    name: "Mario ",
     role: "CMO & Co-founder",
     image: mario,
     linkedin: "https://www.linkedin.com/in/mario-christian-992265143/",
     telegram: "@mariodecentralized",
   },
   {
-    name: "Harsh Raj",
+    name: "Harsh ",
     role: "CTO & Co-founder",
     image: harsh,
     linkedin: "https://www.linkedin.com/in/harsh-raj-2b8709129/",
@@ -235,7 +235,7 @@ const teamMembers: TeamMember[] = [
     github: "https://github.com/Harsh48",
   },
   {
-    name: "Pranjali Chouhan",
+    name: "Pranjali ",
     role: "Head of AI & Web3 Infra",
     image: pranjali,
     linkedin: "https://www.linkedin.com/in/pranjali-chouhan-74b202245/",
@@ -243,14 +243,14 @@ const teamMembers: TeamMember[] = [
     github: "https://github.com/PranjaliChouhan",
   },
   {
-    name: "Vivek Pandav",
+    name: "Vivek ",
     role: "Head of Design",
     image: vivek,
     linkedin: "https://www.linkedin.com/in/vivek-pandav-uiux-product-designer/",
     telegram: "@Vivek_pandav",
   },
   {
-    name: "Sakshi Raj",
+    name: "Sakshi ",
     role: "Communications Lead ",
     image: sakshi,
     linkedin:
@@ -258,21 +258,21 @@ const teamMembers: TeamMember[] = [
     telegram: "@Sakshirajj",
   },
   {
-    name: "Manav Singh",
+    name: "Manav ",
     role: "CBDO",
     image: manav,
     linkedin: "https://www.linkedin.com/in/manav24/",
     telegram: "@manavsingh947",
   },
   {
-    name: "Tarun Lala",
+    name: "Tarun",
     role: "SMM",
     image: tarun,
     linkedin: "https://www.linkedin.com/in/tarun-lala1/",
     // telegram: "https://t.me/tarunlala1",
   },
   {
-    name: "Nikhil Singh",
+    name: "Nikhil",
     role: "UI/UX Designer",
     image: nikhil,
     linkedin:
@@ -280,7 +280,7 @@ const teamMembers: TeamMember[] = [
     telegram: "@nikhil_ux",
   },
   {
-    name: "Rohit Kulkarni",
+    name: "Rohit",
     role: "Software Engineer",
     image: rohit,
     linkedin:
@@ -289,7 +289,7 @@ const teamMembers: TeamMember[] = [
     github: " https://github.com/rohitkulkarni22",
   },
   {
-    name: "Naba Missong",
+    name: "Naba",
     role: "Full Stack Developer",
     image: naba,
     linkedin: "https://www.linkedin.com/in/mrmissong/",
@@ -297,7 +297,7 @@ const teamMembers: TeamMember[] = [
     github: "github.com/mrmissong",
   },
   {
-    name: "Abbas Abidi",
+    name: "Abbas",
     role: "Full Stack Developer",
     image: meerabbas,
     linkedin: "https://www.linkedin.com/in/mohammad-abbas110/",
