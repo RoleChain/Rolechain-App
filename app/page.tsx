@@ -14,7 +14,7 @@ import DemoSection from "@/components/DemoSection";
 import FeaturesList from "@/components/Feature-list";
 import EarlyAccessSection from "@/components/EarlyAccessSection";
 import CoreCapabilities from "@/components/CoreCapabilities";
-import TeamSection from "@/components/Team";
+// import TeamSection from "@/components/Team";
 import PartnersSection from "@/components/partners";
 import Roadmap from "@/components/Roadmap";
 
@@ -38,7 +38,7 @@ export default function Home() {
         <FeaturesList/>
         <CoreCapabilities/>
         <Roadmap/>
-        <TeamSection/>
+        {/* <TeamSection/> */}
         <FAQSection />
         
         <ContactSection />
