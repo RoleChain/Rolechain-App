@@ -89,7 +89,7 @@ const Header = () => {
               <LuArrowUpRight size={18} className="text-white" />
             </Link>
           </button>
-          <button className="hidden place-items-center whitespace-nowrap  rounded-full bg-[#1C1C1C] text-sm  font-medium text-white md:grid">
+          <button className=" place-items-center whitespace-nowrap  rounded-full md:bg-[#1C1C1C] bg-[#1F0D16] text-sm  font-medium text-white md:grid">
             <Link
               href="https://deck.rolechain.org"
               target="_blank"
