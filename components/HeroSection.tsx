@@ -188,7 +188,7 @@ const HeroSection = () => {
         </div>
 
         {/* Search for agents input - Positioned at bottom */}
-        <div className="mt-12 md:mt-32 mb-8 md:mb-16 px-4">
+        <div className="mt-12 md:mt-31 mb-8 md:mb-16 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl md:rounded-2xl p-4 md:p-6 shadow-2xl">
               <div className="flex items-center gap-3 md:gap-4">

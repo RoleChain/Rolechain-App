@@ -114,7 +114,7 @@ const RoleChainAnswers = () => {
       </div>
 
       {/* Search for agents input - Positioned at bottom */}
-      <div className="mt-32 mb-16 px-4">
+      <div className="mb-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl">
             <div className="flex items-center gap-4">
