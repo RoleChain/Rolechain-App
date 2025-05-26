@@ -1,22 +1,10 @@
 import Link from "next/link";
 import Header from "@/components/Header";
-import InfoSection from "@/components/InfoSection";
-import HeroSection from "@/components/HeroSection";
-
-import AdvantagesSection from "@/components/AdvantagesSection";
-import CtaFileDownload from "@/components/CtaFileDownload";
-import CourseInfoSection from "@/components/CourseInfoSection";
-
+import RoleChainAnswers from "@/components/RoleChainAnswers";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer, { socialLinks } from "@/components/Footer";
-import DemoSection from "@/components/DemoSection";
-import FeaturesList from "@/components/Feature-list";
-import EarlyAccessSection from "@/components/EarlyAccessSection";
-import CoreCapabilities from "@/components/CoreCapabilities";
-import TeamSection from "@/components/Team";
-import PartnersSection from "@/components/partners";
-import Roadmap from "@/components/Roadmap";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
@@ -24,21 +12,8 @@ export default function Home() {
       <Header />
       <main className="space-y-[90px] scroll-smooth bg-primary text-white md:space-y-32">
         <HeroSection />
-        <InfoSection />
+        {/* <RoleChainAnswers /> */}
         <div className="h-[10px]"></div>
-        <PartnersSection/>
-        
-        <AdvantagesSection />
-        
-        <EarlyAccessSection/>
-        <CtaFileDownload />
-        <CourseInfoSection />
-        <DemoSection/>
-
-        <FeaturesList/>
-        <CoreCapabilities/>
-        <Roadmap/>
-        <TeamSection/>
         <FAQSection />
         
         <ContactSection />
