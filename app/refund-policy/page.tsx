@@ -123,7 +123,7 @@ const RefundPolicyPage = () => {
                 <div className="space-y-4 text-gray-300">
                   <p>In some cases, we may offer partial refunds:</p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>If you've used significant resources beyond the trial period</li>
+                    <li>If you&apos;ve used significant resources beyond the trial period</li>
                     <li>For annual subscriptions after the 30-day period (prorated)</li>
                     <li>For enterprise accounts with custom agreements</li>
                   </ul>
@@ -148,7 +148,7 @@ const RefundPolicyPage = () => {
                 <div className="space-y-4 text-gray-300">
                   <p>Understanding the difference:</p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Cancellation:</strong> Stops future billing but doesn't refund current period</li>
+                    <li><strong>Cancellation:</strong> Stops future billing but doesn&apos;t refund current period</li>
                     <li><strong>Refund:</strong> Returns money for the current billing period</li>
                     <li>You can cancel anytime to avoid future charges</li>
                     <li>Refunds are only available within the 30-day window</li>

@@ -91,7 +91,7 @@ const TermsAndConditionsPage = () => {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h3>
                 <div className="space-y-4 text-gray-300">
-                  <p>By accessing or using Rolechain's AI agent platform, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access the service.</p>
+                  <p>By accessing or using Rolechain&apos;s AI agent platform, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you may not access the service.</p>
                   <ul className="list-disc pl-6 space-y-2">
                     <li>These terms apply to all users of the platform</li>
                     <li>You must be at least 18 years old to use our services</li>
@@ -138,7 +138,7 @@ const TermsAndConditionsPage = () => {
                     <li>Infringe on intellectual property rights</li>
                     <li>Transmit harmful or malicious code</li>
                     <li>Attempt to gain unauthorized access to our systems</li>
-                    <li>Interfere with other users' use of the service</li>
+                    <li>Interfere with other users&apos; use of the service</li>
                     <li>Use the service for illegal financial activities</li>
                     <li>Create fake accounts or impersonate others</li>
                   </ul>
@@ -152,7 +152,7 @@ const TermsAndConditionsPage = () => {
                   <ul className="list-disc pl-6 space-y-2">
                     <li>Subscription fees are billed in advance on a recurring basis</li>
                     <li>All fees are non-refundable except as required by law</li>
-                    <li>We may change subscription fees with 30 days' notice</li>
+                    <li>We may change subscription fees with 30 days&apos; notice</li>
                     <li>You can cancel your subscription at any time</li>
                     <li>Cancellation takes effect at the end of the current billing period</li>
                     <li>We reserve the right to suspend accounts for non-payment</li>
@@ -193,7 +193,7 @@ const TermsAndConditionsPage = () => {
                 <div className="space-y-4 text-gray-300">
                   <p>To the maximum extent permitted by law:</p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>We provide the service "as is" without warranties</li>
+                    <li>We provide the service &quot;as is&quot; without warranties</li>
                     <li>We are not liable for indirect or consequential damages</li>
                     <li>Our total liability is limited to the amount you paid in the last 12 months</li>
                     <li>We are not responsible for third-party services or content</li>
@@ -209,7 +209,7 @@ const TermsAndConditionsPage = () => {
                   <ul className="list-disc pl-6 space-y-2">
                     <li>By you at any time by closing your account</li>
                     <li>By us if you violate these terms</li>
-                    <li>By us with 30 days' notice for any reason</li>
+                    <li>By us with 30 days&apos; notice for any reason</li>
                     <li>Immediately if required by law or regulation</li>
                     <li>Upon termination, your access to the service will cease</li>
                   </ul>
