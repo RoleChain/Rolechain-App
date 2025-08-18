@@ -1,12 +1,5 @@
 [build]
 command = "npm run build"
-publish = ".next"
-
-[[redirects]]
-from = "http:*"
-to = "https://:splat"
-status = 200
-force = true
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"

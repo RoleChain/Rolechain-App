@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`${poppins.className} overscroll-x-none bg-primary`}>
         {children}
         <Toaster position="top-center" theme="dark" />
-        <Script src="https://gumroad.com/js/gumroad.js" />
+        <Script src="https://gumroad.com/js/gumroad.js" strategy="lazyOnload" />
 
         {/* <Script src="https://gumroad.com/js/gumroad-embed.js"></Script> */}
       </body>
