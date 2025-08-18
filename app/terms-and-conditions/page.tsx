@@ -1,5 +1,3 @@
-"use client";
-
 import { LuFileText, LuScale, LuShieldCheck, LuAlertTriangle, LuGavel, LuUsers } from "react-icons/lu";
 
 const TermsAndConditionsPage = () => {

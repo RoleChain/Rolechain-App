@@ -24,11 +24,11 @@ export default function RootLayout({
     <html className="scroll-smooth  bg-primary" lang="en">
       <body className={`${poppins.className} overscroll-x-none bg-primary`}>
         {children}
-      </body>
-      <Toaster position="top-center" theme="dark" />
-      <Script src="https://gumroad.com/js/gumroad.js" />
+        <Toaster position="top-center" theme="dark" />
+        <Script src="https://gumroad.com/js/gumroad.js" />
 
-      {/* <Script src="https://gumroad.com/js/gumroad-embed.js"></Script> */}
+        {/* <Script src="https://gumroad.com/js/gumroad-embed.js"></Script> */}
+      </body>
     </html>
   );
 }

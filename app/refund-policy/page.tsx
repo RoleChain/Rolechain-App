@@ -1,5 +1,3 @@
-"use client";
-
 import { LuClock, LuShield, LuRefreshCw, LuMail } from "react-icons/lu";
 
 const RefundPolicyPage = () => {

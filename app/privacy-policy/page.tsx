@@ -1,5 +1,3 @@
-"use client";
-
 import { LuShield, LuEye, LuLock, LuDatabase, LuUsers, LuGlobe } from "react-icons/lu";
 
 const PrivacyPolicyPage = () => {
