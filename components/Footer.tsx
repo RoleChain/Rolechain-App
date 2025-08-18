@@ -15,6 +15,7 @@ const footerLinks = [
   [
     { title: "About RoleChain", link: "#about" },
     { title: "Core Capabilities", link: "#capabilities" },
+    { title: "Pricing", link: "/pricing" },
     // { title: "Use Cases", link: "#use-cases" },
     // { title: "Tokenomics", link: "#tokenomics" },
     // { title: "Roadmap", link: "#roadmap" },
@@ -22,6 +23,11 @@ const footerLinks = [
   [
     { title: "Documentation", link: "https://docs.rolechain.org" },
     { title: "FAQ", link: "#faq" },
+  ],
+  [
+    { title: "Terms & Conditions", link: "/terms-and-conditions" },
+    { title: "Privacy Policy", link: "/privacy-policy" },
+    { title: "Refund Policy", link: "/refund-policy" },
   ],
 ];
 
@@ -55,6 +61,18 @@ const Footer = () => {
             </h6>
             <ul className="flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium text-gray-400 lg:max-w-full lg:flex-col">
               {footerLinks[1].map((item, i) => (
+                <Link key={i} href={item.link} className="hover:text-white transition-colors">
+                  {item.title}
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <h6 className="text-white bg-clip-text text-center text-2xl font-bold text-transparent lg:text-left">
+              Legal
+            </h6>
+            <ul className="flex max-w-sm flex-row flex-wrap justify-center gap-4 font-medium text-gray-400 lg:max-w-full lg:flex-col">
+              {footerLinks[2].map((item, i) => (
                 <Link key={i} href={item.link} className="hover:text-white transition-colors">
                   {item.title}
                 </Link>
